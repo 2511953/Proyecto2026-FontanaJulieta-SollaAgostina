@@ -1,6 +1,4 @@
-<<<<<<< HEAD
 # Proyecto2026-FontanaJulieta-SollaAgostina
-
 ESTRUCTURA:
     Página 1: Index, se debe iniciar sesión obligatoriamente o crear una cuenta
     Página 2: iniciar sesión o crear cuenta, además de los datos necesarios, se deben agregar como etiquetas de tu perfil como persona/familia, así poder hacer match y para que las familias que dan en adopción
@@ -20,6 +18,7 @@ CHATS:
 
 MATCH:
     Página 10: Desde la página 5 venimos a esta con el botón match, empieza a buscar coincidencias donde el usuario puede decidir si no pasa y cuando se elige uno se linkea a esa página.
-=======
-# Proyecto2026-FontanaJulieta-SollaAgostina
->>>>>>> a18259979b7b5b1c864a16f3eb0d03633bc4e674
+
+    
+
+
