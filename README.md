@@ -14,11 +14,21 @@ PARA DAR EN ADOPCIÓN/VENDER/PUBLICAR UN PERRO EN TRANSICIÓN:
     Página 8: Luego te lleva a una pagina que te permite poner fotos y datos para publicar, con etiquetas sobre los datos de la mascota y luego un mensaje
 
 CHATS:
-    Página 9: no hay mucho para explicar
+    Página 9: Forma de comunicacion entre las personas utilizando chat
 
 MATCH:
     Página 10: Desde la página 5 venimos a esta con el botón match, empieza a buscar coincidencias donde el usuario puede decidir si no pasa y cuando se elige uno se linkea a esa página.
 
     
+MARKDOWN PROYECTO: 
+[x] Repositorio de GitHub
+[] Sketch 
+[x] Mockup
+[] ReadMe.md
+[] HTML
+[] CSS
+[] Java
 
+
+ 
 
