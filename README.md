@@ -22,13 +22,14 @@ MATCH:
     
 MARKDOWN PROYECTO: 
 
--  [x] Repositorio de GitHub
--  [] Sketch 
--  [x] Mockup
--  [] ReadMe.md
--  [] HTML
--  [] CSS
--  [] Java
+- [x] Repositorio de GitHub
+- [] Sketch 
+- [x] Mockup
+- [] ReadMe.md
+- [] HTML
+- [] CSS
+- [] Java
+
 
 
  
