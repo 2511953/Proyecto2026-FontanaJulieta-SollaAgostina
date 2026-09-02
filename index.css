@@ -1,0 +1,56 @@
+
+#logo{
+    width: auto;
+    height: 250px;
+    align-items: center;
+    margin: 0 auto;
+}
+div{
+    border: 3px solid #c9184a;
+    border-radius: 10px;
+    background-color:#fadde1 ;
+    max-width: 500px;
+    align-items: center;
+    margin: 0 auto ;
+    margin-top: 60px;
+}
+body{
+    background-color:#ffcad4;
+    font-family:Momo trust display, static;
+    text-align: center;
+
+}
+h1{
+    font-family:Cherry bomb one, static ;
+    color: #800f2f;
+    text-align: center;
+    font-size: 55px;
+    transform: skew(-10deg);
+}
+button {
+    display: block;
+    margin: 0 auto 10px auto;
+    border: 2px solid #590d22;
+    border-radius: 20px;
+    width: 150px;
+    height: 50px;
+    font-family:Momo trust display, static;
+    transition: transform 0.2s ease;
+}
+#iniciar{
+    background-color: #ff7096;
+}
+#crear{
+   background-color: #fbb1bd;
+    border: 2px solid #590d22;
+    border-radius: 20px;
+    width: 150px;
+    height: 50px;
+    font-family:Momo trust display, static;  
+}
+h4{
+    margin: auto 10px 20px 10px;
+}
+button:hover{
+    transform:scale(1.2);
+}
