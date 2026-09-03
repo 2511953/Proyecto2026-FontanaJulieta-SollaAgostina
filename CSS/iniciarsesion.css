@@ -40,5 +40,6 @@ input::placeholder{
     text-align: center;
 }
 a{
-    color: inherit;        
+    color: inherit;    
+    text-decoration: none;    
 }
