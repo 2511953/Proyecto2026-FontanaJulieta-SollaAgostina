@@ -4,6 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/inicio.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Momo+Trust+Display&display=swap"
+        rel="stylesheet">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="../Imagenes/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../Imagenes/favicon-16x16.png">
@@ -14,53 +22,62 @@
 <body>
     <header>
         <nav>
-            <img src="../Imagenes/logo.png">
-            <h2> Patitas </h2>
+            <img src="../Imagenes/logo.png" id="logo">
+            <h1 id="textologo"> Patitas </h1>
             <ul>
                 <li><a href="inicio.html">Inicio</a></li>
                 <li><a href="explorar.html"> Explorar</a></li>
-                <li><a href="match.html">Explorar</a></li>
+                <li><a href="match.html">Match</a></li>
                 <li><a href="chat.html">Chats</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <small>Hola👋</small>
-        <h1>¿Que queres hacer hoy?</h1>
-        <img src="../Imagenes/banner.png">
-        <button>
+        <small>Hola 👋</small>
+        <h1 class="titulo">¿Que queres hacer hoy?</h1>
+        <img src="../Imagenes/banner.png" class="banner">
+        <button class="botones">
             <span>
-                <img src="../Imagenes/logo_camara.png">
+                <img src="../Imagenes/logo_camara.png" id="img">
             </span>
             <div>
-                <span>Publicar mascota</span>
+                <span>
+                    <h3>Publicar mascota</h3>
+                </span>
                 <span>Comparti la historia de tu peludo</span>
             </div>
         </button>
-        <button>
+        <button class="botones">
             <span>
-                <img src="../Imagenes/patita.png" </span>
-                <div>
-                    <span>Adoptar o comprar</span>
-                    <span>Encontra a tu compañero ideal</span>
-                </div>
+                <img src="../Imagenes/patita.png" id="img">
+            </span>
+            <div class="texto-boton">
+                <span>
+                    <h3>Adoptar o comprar</h3>
+                </span>
+                <span>Encontra a tu compañero ideal</span>
+            </div>
         </button>
         <h3>Recien llegados!</h3>
 
         <footer>
-            <p>Hecho con mucho amor para que cada mascota encuentre su hogar ideal.</p>
-            <p>Cada patita merece su hogar, gracias por ser parte de esta comunidad</p>
-            <p>Adoptar es un acto de amor que le da una segunda oportunidad a todos los peluditos</p>
-            <button>
-                <img src="../Imagenes/instagram.png">
-            </button>
-            <button>
-                <img src="../Imagenes/facebook.png">
-            </button>
-            <button>
-                <img src="../Imagenes/whatsapp.png">
-            </button>
-            <p>&copy; 2026, Patitas</p>
+            <h4>
+                Hecho con mucho amor para que cada mascota encuentre su hogar ideal.
+                Cada patita merece su hogar, gracias por ser parte de esta comunidad.
+                Adoptar es un acto de amor que le da una segunda oportunidad a todos los peluditos
+            </h4>
+            <div class="botonesapps-posicion">
+                <button class="botonesapps">
+                    <img src="../Imagenes/instagram.png" class="img">
+                </button>
+                <button class="botonesapps">
+                    <img src="../Imagenes/facebook.png" class="img">
+                </button>
+                <button class="botonesapps">
+                    <img src="../Imagenes/whatsapp.png" class="img">
+                </button>
+            </div>
+            <p class="copy">&copy; 2026, Patitas · Hecho con amor desde Argentina </p>
         </footer>
     </main>
 </body>

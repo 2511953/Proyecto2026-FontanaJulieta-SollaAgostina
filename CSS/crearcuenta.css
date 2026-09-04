@@ -1,3 +1,19 @@
+/* 
+                    PALETA DE COLORES 
+background: ffcad4
+background de las secciones: fadde1
+background nav y footer: ff85a1
+background botones: 
+    ff7096
+    fbb1bd
+    ea9ab2
+bordes botones: 590d22
+bordes de las secciones: c9184a
+texto "patitas": 800f2f
+hover botones: 
+    c9184a
+*/
+
 div.formulario{
     border: 3px solid #c9184a;
     border-radius: 10px;
