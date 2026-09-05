@@ -41,7 +41,7 @@ body{
 .crear-cuenta:hover{
     transform:scale(1.2);
 }
-input{
+.espacios{
     background-color: #ebb3a9;
     width: 300px;
     height: 25px;

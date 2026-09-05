@@ -22,19 +22,39 @@
             <h1>Creá tu cuenta 🐶</h1>
             <p>Completá tu perfil para encontrar el match perfecto</p>
 
-            <form name="Crear Cuenta ">
+            <form name="Crear Cuenta">
                 <label for="nombre">NOMBRE COMPLETO</label><br>
-                <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre"><br><br>
+                <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" required
+                    class="espacios"><br><br>
+
+                <label for="sexo">SEXO</label><br>
+                <select id="sexo" name="sexo" required class="espacios">
+                    <option value="">Seleccione una opcion</option>
+                    <option value="masculino">Masculino</option>
+                    <option value="femenino">Femenino</option>
+                    <option value="otro">Otro</option>
+                </select><br><br>
+
+                <label for="dni">DNI</label><br>
+                <input type="number" id="dni" name="dni" placeholder="Ingrese su DNI" required class="espacios"><br><br>
 
                 <label for="email">EMAIL</label><br>
-                <input type="email" id="email" name="email" placeholder="usuario@dominio.com"><br><br>
+                <input type="email" id="email" name="email" placeholder="usuario@dominio.com" required
+                    class="espacios"><br><br>
 
                 <label for="password">CONTRASEÑA</label><br>
-                <input type="password" id="password" name="password" placeholder="********"><br>
+                <input type="password" id="password" name="password" placeholder="********" required
+                    class="espacios"><br>
                 <small>Usá letras y números para mayor seguridad</small><br><br>
 
+                <label for="password">CONFIRMAR CONTRASEÑA</label><br>
+                <input type="password" id="password" name="password" placeholder="********" required
+                    class="espacios"><br>
+                <small>Ambas contraseñas deben ser iguales</small><br><br>
+
                 <label for="ubicacion">UBICACIÓN</label><br>
-                <input type="text" id="ubicacion" name="ubicacion" placeholder="Cordoba, Argentina"><br><br>
+                <input type="text" id="ubicacion" name="ubicacion" placeholder="Cordoba, Argentina" required
+                    class="espacios"><br><br>
 
                 <p>CONTANOS UN POCO SOBRE VOS</p>
                 <p>Elegí todas las opciones que te representen. Las usamos para el sistema de match.</p>
