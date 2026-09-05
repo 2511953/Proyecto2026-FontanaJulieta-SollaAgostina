@@ -17,51 +17,55 @@
 </head>
 
 <body>
-    <div>
-        <h2>¡Bienvenido de vuelta! 🐾</h2>
-        <p>Ingresá tus datos para continuar</p>
+    <main>
+        <div class="main">
+            <h2>¡Bienvenido de vuelta! 🐾</h2>
+            <p>Ingresá tus datos para continuar</p>
 
-        <form name="Iniciar Sesion">
+            <form name="Iniciar Sesion">
 
-            <p>
-                <label for="email">EMAIL</label>
-                <input type="email" name="email" placeholder="usuario@dominio.com" id="email">
-            </p>
+                <p>
+                    <label for="email">EMAIL</label>
+                    <input type="email" name="email" placeholder="usuario@dominio.com" id="email">
+                </p>
 
-            <p>
-                <label for="contraseña">CONTRASEÑA</label>
-                <input type="password" name="Contraseña" placeholder="*********" id="password">
-            </p>
+                <p>
+                    <label for="contraseña">CONTRASEÑA</label>
+                    <input type="password" name="Contraseña" placeholder="*********" id="password">
+                </p>
 
-            <a href="#" class="olvidaste">¿Olvidaste tu contraseña?</a>
+                <a href="#" class="olvidaste">¿Olvidaste tu contraseña?</a>
 
-            <a href="inicio.html">
-                <button type="submit">Entrar</button>
-            </a>
+                <a href="inicio.html">
+                    <button type="submit" class="entrar">Entrar</button>
+                </a>
 
 
-            <p class="registro">
-                ¿No tenés una cuenta?
-                <a href="#">Registrate</a>
-            </p>
-
-        </form>
-    </div>
-    <footer>
-        <p>Hecho con mucho amor para que cada mascota encuentre su hogar ideal.</p>
-        <p>Cada patita merece su hogar, gracias por ser parte de esta comunidad</p>
-        <p>Adoptar es un acto de amor que le da una segunda oportunidad a todos los peluditos</p>
-        <button>
-            <img src="../Imagenes/instagram.png">
-        </button>
-        <button>
-            <img src="../Imagenes/facebook.png">
-        </button>
-        <button>
-            <img src="../Imagenes/whatsapp.png">
-        </button>
-        <p>&copy; 2026, Patitas</p>
-    </footer>
+                <p class="registro">
+                    ¿No tenés una cuenta?
+                    <a href="#">Registrate</a>
+                </p>
+            </form>
+        </div>
+        <footer>
+            <h4>
+                Hecho con mucho amor para que cada mascota encuentre su hogar ideal.
+                Cada patita merece su hogar, gracias por ser parte de esta comunidad.
+                Adoptar es un acto de amor que le da una segunda oportunidad a todos los peluditos
+            </h4>
+            <div class="botonesapps-posicion">
+                <button class="botonesapps">
+                    <img src="../Imagenes/instagram.png" class="img">
+                </button>
+                <button class="botonesapps">
+                    <img src="../Imagenes/facebook.png" class="img">
+                </button>
+                <button class="botonesapps">
+                    <img src="../Imagenes/whatsapp.png" class="img">
+                </button>
+            </div>
+            <p class="copy">&copy; 2026, Patitas · Hecho con amor desde Argentina </p>
+        </footer>
 </body>
 
 </html>

@@ -14,22 +14,21 @@ hover botones:
     c9184a
 */
 
-div{
+.main{
     border: 3px solid #c9184a;
     border-radius: 10px;
     background-color:#fadde1 ;
     max-width: 500px;
     align-items: center;
     margin: 0 auto ;
-    margin-top: 200px;
+    margin: 150px auto 150px;
 }
 body{
     background-color:#ffcad4;
     font-family:Momo trust display, static;
     text-align: center;
-
 }
-button {
+.entrar {
     display: block;
     margin: 25px auto 10px auto;
     border: 2px solid #590d22;
@@ -40,7 +39,7 @@ button {
     transition: transform 0.2s ease;
     background-color: #fbb1bd;
 }
-button:hover{
+.entrar:hover{
     transform:scale(1.2);
 }
 input{
@@ -58,4 +57,42 @@ input::placeholder{
 a{
     color: inherit;    
     text-decoration: none;    
+}
+footer{
+    background-color:#ff85a1;
+    border-radius: 10px;
+    gap:0px;
+}
+.botonesapps-posicion{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 40px;
+    text-align: right;
+}
+.botonesapps{
+    border: #590d22 2px solid;
+    border-radius: 10px;
+    background-color: #ffcad4;
+    margin-right: 15px;
+    justify-content: flex-end;
+}
+.botonesapps:hover{
+    background-color: #ff7096;
+    transform:scale(1.2);
+}
+.img{
+    width:30px;
+    height:auto;
+}
+footer h4{
+    display: block;
+    text-align:justify;
+    margin: 40px 500px auto 10px;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+.copy{
+    display: block;
+    text-align: center;
+    padding-bottom: 10px;
 }

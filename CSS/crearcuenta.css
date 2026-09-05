@@ -20,14 +20,14 @@ div.formulario{
     background-color:#fadde1 ;
     max-width: 1000px;
     margin: 0 auto ;
-    margin-top: 200px;
+    margin: 150px auto 150px;
     padding-left: 20px;
 }
 body{
     background-color:#ffcad4;
     font-family:Momo trust display, static;
 }
-button {
+.crear-cuenta {
     display: block;
     margin: 25px auto 10px auto;
     border: 2px solid #590d22;
@@ -38,7 +38,7 @@ button {
     transition: transform 0.2s ease;
     background-color: #fbb1bd;
 }
-button:hover{
+.crear-cuenta:hover{
     transform:scale(1.2);
 }
 input{
@@ -88,4 +88,42 @@ small{
 }
 .formulario{
     text-align: center;
+}
+footer{
+    background-color:#ff85a1;
+    border-radius: 10px;
+    gap:0px;
+}
+.botonesapps-posicion{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 40px;
+}
+.botonesapps{
+    border: #590d22 2px solid;
+    border-radius: 10px;
+    background-color: #ffcad4;
+}
+.botonesapps:hover{
+    background-color: #ff7096;
+    transform:scale(1.2);
+}
+button{
+    margin-right: 15px;
+}
+.img{
+    width:30px;
+    height:auto;
+}
+footer h4{
+    display: block;
+    text-align:justify;
+    margin: 40px 500px auto 10px;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+.copy{
+    display: block;
+    text-align: center;
+    padding-bottom: 10px;
 }

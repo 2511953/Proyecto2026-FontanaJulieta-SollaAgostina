@@ -22,14 +22,14 @@ hover botones:
     margin: 0 auto;
     margin-top: 40px;
 }
-div{
+.main{
     border: 3px solid #c9184a;
     border-radius: 10px;
     background-color:#fadde1 ;
     max-width: 500px;
     align-items: center;
     margin: 0 auto ;
-    margin-top: 60px;
+    margin: 60px auto 60px;
 }
 body{
     background-color:#ffcad4;
@@ -46,7 +46,7 @@ h1{
     margin-bottom: 20px;
     
 }
-button {
+.botones-main {
     display: block;
     margin: 0 auto 10px auto;
     border: 2px solid #590d22;
@@ -73,4 +73,42 @@ button:hover{
 
 a {
     text-decoration: none;
+}
+footer{
+    background-color:#ff85a1;
+    border-radius: 10px;
+    gap:0px;
+}
+.botonesapps-posicion{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 40px;
+}
+.botonesapps{
+    border: #590d22 2px solid;
+    border-radius: 10px;
+    background-color: #ffcad4;
+}
+.botonesapps:hover{
+    background-color: #ff7096;
+    transform:scale(1.2);
+}
+button{
+    margin-right: 15px;
+}
+.img{
+    width:30px;
+    height:auto;
+}
+footer h4{
+    display: block;
+    text-align:justify;
+    margin: 40px 500px auto 10px;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+.copy{
+    display: block;
+    text-align: center;
+    padding-bottom: 10px;
 }
