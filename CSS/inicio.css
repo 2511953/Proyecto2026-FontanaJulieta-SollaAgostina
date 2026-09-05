@@ -1,0 +1,126 @@
+/* 
+                    PALETA DE COLORES 
+background: ffcad4
+background de las secciones: fadde1
+background nav y footer: ff85a1
+background botones: 
+    ff7096
+    fbb1bd
+    ea9ab2
+bordes botones: 590d22
+bordes de las secciones: c9184a
+texto "patitas": 800f2f
+hover botones: 
+    c9184a
+*/
+
+nav{
+    background-color:#ff85a1;
+    border-radius: 10px;
+    display: flex;
+}
+
+#logo{
+    width:200px;
+    height: auto;
+    margin-right: -40px;
+}
+#textologo{
+    font-family: "Jua", sans-serif;
+    padding-top: 30px;
+    color:#590d22;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    padding-top: 30px;
+    font-family: Momo trust display, static;
+}
+
+nav a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff7096;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: all 0.2s ease;
+}
+nav a:hover {
+    background-color: #c9184a;
+    transform:scale(1.2);
+}
+
+body{
+    background-color:#ffcad4;
+    font-family:Momo trust display, static;
+}
+small{
+    padding-left: 20px;
+}
+.titulo{
+    padding-left: 60px;
+}
+.banner{
+    display: block;
+    margin: 0 auto;
+}
+.botones{
+    display: flex;
+    background-color: #ea9ab2;
+    font-family: Momo trust display, static;
+    border: #800f2f 2px solid;
+    border-radius: 30px;
+    margin: 20px auto;
+    width: 1000px;
+}  
+.botones:hover{
+    background-color: #d691a6;
+}
+#img{
+    width:250px;
+    height: auto;
+    margin-right: -40px;
+    margin-left: -70px;
+} 
+
+footer{
+    background-color:#ff85a1;
+    border-radius: 10px;
+    gap:0px;
+}
+.botonesapps-posicion{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 40px;
+}
+.botonesapps{
+    border: #590d22 2px solid;
+    border-radius: 10px;
+    background-color: #ffcad4;
+}
+.botonesapps:hover{
+    background-color: #ff7096;
+    transform:scale(1.2);
+}
+button{
+    margin-right: 15px;
+}
+.img{
+    width:30px;
+    height:auto;
+}
+footer h4{
+    display: block;
+    text-align:justify;
+    margin: 40px 500px auto 10px;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+.copy{
+    display: block;
+    text-align: center;
+    padding-bottom: 10px;
+}
