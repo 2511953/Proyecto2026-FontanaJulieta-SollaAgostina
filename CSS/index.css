@@ -55,6 +55,7 @@ h1{
     height: 50px;
     font-family:Momo trust display, static;
     transition: transform 0.2s ease;
+    cursor:pointer;
 }
 #iniciar{
     background-color: #ff7096;
@@ -88,6 +89,7 @@ footer{
     border: #590d22 2px solid;
     border-radius: 10px;
     background-color: #ffcad4;
+    cursor:pointer;
 }
 .botonesapps:hover{
     background-color: #ff7096;

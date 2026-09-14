@@ -37,6 +37,7 @@ body{
     font-family:Momo trust display, static;
     transition: transform 0.2s ease;
     background-color: #fbb1bd;
+    cursor:pointer;
 }
 .crear-cuenta:hover{
     transform:scale(1.2);
@@ -70,6 +71,7 @@ a{
     cursor: pointer;
     transition: all 0.2s ease;
     margin: 5px;
+    cursor:pointer;
 }
 
 .etiquetas:hover {
@@ -103,6 +105,7 @@ footer{
     border: #590d22 2px solid;
     border-radius: 10px;
     background-color: #ffcad4;
+    cursor:pointer;
 }
 .botonesapps:hover{
     background-color: #ff7096;
