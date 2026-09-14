@@ -47,6 +47,7 @@ nav a {
     text-decoration: none;
     border-radius: 20px;
     transition: all 0.2s ease;
+    cursor:pointer;
 }
 nav a:hover {
     background-color: #c9184a;
@@ -75,6 +76,7 @@ small{
     border-radius: 30px;
     margin: 20px auto;
     width: 1000px;
+    cursor:pointer;
 }  
 .botones:hover{
     background-color: #d691a6;
@@ -100,6 +102,7 @@ footer{
     border: #590d22 2px solid;
     border-radius: 10px;
     background-color: #ffcad4;
+    cursor:pointer;
 }
 .botonesapps:hover{
     background-color: #ff7096;
@@ -138,6 +141,7 @@ footer{
     border: #590d22 2px solid;
     border-radius: 10px;
     background-color: #ffcad4;
+    cursor:pointer;
 }
 .botonesapps:hover{
     background-color: #ff7096;
