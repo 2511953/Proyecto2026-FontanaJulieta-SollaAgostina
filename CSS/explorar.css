@@ -1,0 +1,88 @@
+nav{
+    background-color: var(--bg-nav-footer);
+    border-radius: 10px;
+    display: flex;
+}
+
+#logo{
+    width:200px;
+    height: auto;
+    margin-right: -40px;
+}
+#textologo{
+    font-family: "Jua", sans-serif;
+    padding-top: 30px;
+    color:var(--btn-borde);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    padding-top: 30px;
+    font-family: Momo trust display, static;
+}
+
+nav a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--btn-1);
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: all 0.2s ease;
+    cursor:pointer;
+}
+nav a:hover {
+    background-color:var(--btn-hover);
+    transform:scale(1.2);
+}
+
+body{
+    background-color:var(--bg-principal);
+    font-family:Momo trust display, static;
+}
+
+.cuadrilla{
+    display: flex;
+    flex-wrap: wrap;
+    gap:30px;
+    align-items: center;
+    margin-left: 40px;
+}
+.mascotas{
+    border: 6px solid var(--btn-borde);
+    border-radius: 5px;
+}
+.mascotas h3{
+    text-align: center;
+}
+
+.mascotas img{
+    height: 360px;
+    width: 310px;
+}
+
+.mascotas button{
+    display: block;
+    margin: 25px auto 10px auto;
+    border: 2px solid var(--btn-borde);
+    border-radius: 20px;
+    width: 150px;
+    height: 50px;
+    font-family:Momo trust display, static;
+    transition: transform 0.2s ease;
+    background-color: var(--btn-2);
+    cursor:pointer;
+}
+
+.mascotas button:hover{
+    transform:scale(1.2);
+}
+.mascotas a{
+    text-decoration: none;
+    color:inherit;
+}
+.mascotas a:visited{
+    color:inherit;
+}
