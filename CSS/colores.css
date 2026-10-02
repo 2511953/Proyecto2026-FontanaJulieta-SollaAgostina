@@ -1,0 +1,17 @@
+:root {
+  /* Fondos */
+    --bg-principal: #ffcad4;
+    --bg-secciones: #fadde1;
+    --bg-nav-footer: #ff85a1;
+
+  /* Botones */
+    --btn-1: #ff7096;
+    --btn-2: #fbb1bd;
+    --btn-3: #ea9ab2;
+    --btn-borde: #590d22;
+    --btn-hover: #c9184a;
+
+  /* Bordes y texto */
+    --borde-secciones: #c9184a;
+    --texto-patitas: #800f2f;
+}
