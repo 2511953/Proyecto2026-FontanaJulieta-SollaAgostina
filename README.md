@@ -2,23 +2,17 @@
 
 ESTRUCTURA:
 Página 1: Index, se debe iniciar sesión obligatoriamente o crear una cuenta
-Página 2: iniciar sesión o crear cuenta, además de los datos necesarios, se deben agregar como etiquetas de tu perfil como persona/familia, así poder hacer match y para que las familias que dan en adopción
-Página 3: una vez que se inicia la sesión, Se lleva a una interfaz con dos botones donde podes elegir (dependiendo del tipo de cuenta) si publicar una mascota o si se quiere comprar o adoptar
+Página 2: Iniciar sesión o crear cuenta, además de los datos necesarios, se deben agregar como etiquetas de tu perfil como persona/familia, así poder hacer match y para que las familias que dan en adopción.
+Página 3: Una vez que se inicia la sesión, Se lleva a una interfaz con dos botones donde podes elegir (dependiendo del tipo de cuenta) si publicar una mascota o si se quiere adoptar.
 
 PARA ADOPTAR:
-Página 4 (cada tipo de animal): En la interfaz se muestra la foto del animal, con su nombre, se puede filtrar por género, edad, raza
-Página 5 (Cada animal): Se muestra la imagen más grande, al lado el nombre y abajo tags del género, la raza, la edad. Una descripción de la mascota, luego una del perfil del adoptante ideal y un botón que te permita adoptar o comprar
-Página 6: Algo tierno que te de mas ganas de adoptar y debajo un botón para iniciar chat pero con un texto más cookie que diga habla con tu futura mascota!!!!!!!! Este mismo botón da un aviso a la persona del otro lado para que pueda responder y a su vez en el chat se crea un mensaje tierno automático dando a entender que hay que esperar a que el adoptador responda
+Página 4 (Explorar): Catalogo de mascotas con su respectiva foto y nombre y un boton debajo que dice "ver mascota", el cual te lleva a la siguiente pagina de vista ampliada. 
+Página 5 (Vista ampliada): Se muestra la imagen más grande, al lado el nombre y abajo tags del género, la raza, la edad. Una descripción de la mascota, luego una del perfil del adoptante ideal y un botón que te permita adoptar.
+Página 6: Luego de apretar el boton de querer adoptar, se muestra un mensaje con el nombre y foto de la mascota que se acaba de adoptar correctamente.
 
 PARA DAR EN ADOPCIÓN:
-Página 7: si se presiona la opción publicar te lleva a una interfaz de publicación y antes de publicar te pregunte si queres dar en adopcion o venta, en el caso de ser una venta, se debe pasar por una interfaz de seguridad que pida imágenes de los padres y crías para verificar que no hay maltrato animal, la publicación quedará pausada esperando la verificación para ser aprobada o no
-Página 8: Luego te lleva a una pagina que te permite poner fotos y datos para publicar, con etiquetas sobre los datos de la mascota y luego un mensaje
+Página 7 (Datos de la mascota): Luego de apretar el boton para poner en adopcion se muestra un formulario para completar con todos los datos del animal para poner en adopcion (todos los datos obligatorios) y un boton de "publicar ahora". Y una vez que publicaste te devuelve a la pagina de inicio por si queres volver a publicar o adoptar. 
 
-CHATS:
-Página 9: Forma de comunicacion entre las personas utilizando chat
-
-MATCH:
-Página 10: Desde la página 5 venimos a esta con el botón match, empieza a buscar coincidencias donde el usuario puede decidir si no pasa y cuando se elige uno se linkea a esa página.
 
 MARKDOWN PROYECTO:
 
