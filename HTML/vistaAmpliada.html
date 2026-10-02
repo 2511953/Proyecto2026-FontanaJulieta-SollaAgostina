@@ -1,46 +1,49 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="iniciarsesion.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Momo+Trust+Display&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/colores.css">
+    <link rel="stylesheet" href="../CSS/explorar.css">
+    <link rel="stylesheet" href="../CSS/vistaAmpliada.css">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="../Imagenes/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../Imagenes/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
-    <link rel="stylesheet" href="../CSS/explorar.css">
     <title>Mochi - Adopción</title>
-    
 </head>
+
 <body>
     <header id="mascota-adopcion">
-        <a href="Explorar.html" id="boton-volver" title="Volver a explorar">Volver</a>
+        <img src="../Imagenes/mascotas/Mochi.jpg" alt="Mochi, golden retriever">
+        <a href="Explorar.html" id="boton-volver" title="Volver a explorar" class="volver">Volver</a>
     </header>
 
     <main>
 
         <section id="datos-principales">
-            <div id="mascota">
+            <div id="mascota" class="info">
                 <h1>Mochi</h1>
                 <h3>Golden Retriever · 2 años</h3>
             </div>
             <p id="tipo-publicacion"><strong>Adopción</strong></p>
 
             <ul id="etiquetas">
-                <li class="sexo">Macho</li>
-                <li class="tamanio">Grande</li>
-                <li class="vacunado">Vacunado</li>
-                <li class="castrado">Castrado</li>
-                <li class="friendly">Friendly con niños</li>
-                <li class="activo">Activo</li>
+                <li id="sexo" class="item">Macho</li>
+                <li id="tamanio" class="item">Grande</li>
+                <li id="vacunado" class="item">Vacunado</li>
+                <li id="castrado" class="item">Castrado</li>
+                <li id="friendly" class="item">Friendly con niños</li>
+                <li id="activo" class="item">Activo</li>
             </ul>
         </section>
-        
+
         <section id="datos-mascota">
             <h2>Sobre Mochi</h2>
             <p>
@@ -58,37 +61,36 @@
             </p>
         </section>
 
-
         <p id="datos-publicante">
             <small>Publicado por <strong>Familia Torres</strong></small>
         </p>
 
         <div id="acciones">
-            <a href="adoptar.html" id="boton-adoptar">🐾 Quiero adoptar</a>
+            <a href="adoptar.html" id="boton-adoptar" class="adoptar">🐾 Quiero adoptar</a>
         </div>
 
-
-    <footer>
-        <h4>
-            Hecho con mucho amor para que cada mascota encuentre su hogar ideal.
-            Cada patita merece su hogar, gracias por ser parte de esta comunidad.
-            Adoptar es un acto de amor que le da una segunda oportunidad a todos los peluditos
-        </h4>
-        <div class="botonesapps-posicion">
-            <button class="botonesapps">
-                <img src="../Imagenes/instagram.png" class="img">
-            </button>
-            <button class="botonesapps">
-                <img src="../Imagenes/facebook.png" class="img">
-            </button>
-            <button class="botonesapps">
-                <img src="../Imagenes/whatsapp.png" class="img">
-            </button>
-        </div>
-        <p class="copy">&copy; 2026, Patitas · Hecho con amor desde Argentina </p>
-    </footer>
+        <footer>
+            <h4>
+                Hecho con mucho amor para que cada mascota encuentre su hogar ideal.
+                Cada patita merece su hogar, gracias por ser parte de esta comunidad.
+                Adoptar es un acto de amor que le da una segunda oportunidad a todos los peluditos
+            </h4>
+            <div class="botonesapps-posicion">
+                <button class="botonesapps">
+                    <img src="../Imagenes/instagram.png" class="img" alt="Instagram">
+                </button>
+                <button class="botonesapps">
+                    <img src="../Imagenes/facebook.png" class="img" alt="Facebook">
+                </button>
+                <button class="botonesapps">
+                    <img src="../Imagenes/whatsapp.png" class="img" alt="WhatsApp">
+                </button>
+            </div>
+            <p class="copy">&copy; 2026, Patitas · Hecho con amor desde Argentina</p>
+        </footer>
 
     </main>
 
 </body>
+
 </html>

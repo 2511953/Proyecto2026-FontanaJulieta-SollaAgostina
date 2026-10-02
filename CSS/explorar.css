@@ -86,3 +86,19 @@ body{
 .mascotas a:visited{
     color:inherit;
 }
+.volver {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90px;
+    height: 78px;
+    border: none;
+    background: url(../Imagenes/volver.svg)center / contain no-repeat;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin-top: 15px;
+}

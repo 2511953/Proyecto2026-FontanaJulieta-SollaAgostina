@@ -18,6 +18,9 @@
 </head>
 
 <body>
+    <header>
+        <a href="index.html" id="boton-volver" title="Volver al index" class="volver">Volver</a>
+    </header>
     <main>
         <div class="formulario">
             <h1>Creá tu cuenta 🐶</h1>
@@ -25,11 +28,11 @@
 
             <form name="Crear Cuenta">
                 <label for="nombre">NOMBRE COMPLETO</label><br>
-                <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" required maxlength="50"
+                <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" maxlength="50"
                     class="espacios"><br><br>
 
                 <label for="sexo">SEXO</label><br>
-                <select id="sexo" name="sexo" required class="espacios">
+                <select id="sexo" name="sexo" class="espacios">
                     <option value="">Seleccione una opcion</option>
                     <option value="masculino">Masculino</option>
                     <option value="femenino">Femenino</option>
@@ -37,62 +40,75 @@
                 </select><br><br>
 
                 <label for="dni">DNI</label><br>
-                <input type="number" id="dni" name="dni" placeholder="Ingrese su DNI" required class="espacios"><br><br>
+                <input type="number" id="dni" name="dni" placeholder="Ingrese su DNI" class="espacios"><br><br>
 
                 <label for="email">EMAIL</label><br>
-                <input type="email" id="email" name="email" placeholder="usuario@dominio.com" required maxlenght="20"
+                <input type="email" id="email" name="email" placeholder="usuario@dominio.com" maxlenght="30"
                     class="espacios"><br><br>
 
                 <label for="password">CONTRASEÑA</label><br>
-                <input type="password" id="password" name="password" placeholder="********" required maxlenght=""
+                <input type="password" id="password" name="password" placeholder="********" maxlenght="16"
                     class="espacios"><br>
                 <small>Usá letras y números para mayor seguridad</small><br><br>
 
                 <label for="password">CONFIRMAR CONTRASEÑA</label><br>
-                <input type="password" id="password" name="password" placeholder="********" required
-                    class="espacios"><br>
+                <input type="password" id="password" name="password" placeholder="********" class="espacios"><br>
                 <small>Ambas contraseñas deben ser iguales</small><br><br>
 
                 <label for="ubicacion">UBICACIÓN</label><br>
-                <input type="text" id="ubicacion" name="ubicacion" placeholder="Cordoba, Argentina" required
+                <input type="text" id="ubicacion" name="ubicacion" placeholder="Cordoba, Argentina"
                     class="espacios"><br><br>
 
                 <p>CONTANOS UN POCO SOBRE VOS</p>
                 <p>Elegí todas las opciones que te representen. Las usamos para el sistema de match.</p>
                 <div>
                     <label class="etiquetas"><input type="checkbox" class="etiquetas-input" name="tags"
-                            value="Persona sola"> Persona sola</label>
+                            value="Persona sola">
+                        Persona sola
+                    </label>
                     <label class="etiquetas"><input type="checkbox" class="etiquetas-input" name="tags" value="Familia">
-                        Familia</label>
+                        Familia
+                    </label>
                     <label class="etiquetas"><input type="checkbox" class="etiquetas-input" name="tags"
-                            value="Busco adoptar"> Busco
-                        adoptar</label>
+                            value="Busco adoptar">
+                        Busco adoptar
+                    </label>
                     <label class="etiquetas"><input type="checkbox" class="etiquetas-input" name="tags"
-                            value="Doy en adopcion"> Persona
-                        sola</label>
+                            value="Doy en adopcion">
+                        Persona sola
+                    </label>
                     <label class="etiquetas"><input type="checkbox" class="etiquetas-input" name="tags"
-                            value="Casa con jardin"> Casa con
-                        jardin</label>
+                            value="Casa con jardin">
+                        Casa con jardin
+                    </label>
                     <label class="etiquetas"><input type="checkbox" class="etiquetas-input" name="tags"
-                            value="Departamento"> Departamento</label><br>
+                            value="Departamento">
+                        Departamento
+                    </label><br>
                     <label class="etiquetas"><input type="checkbox" class="etiquetas-input" name="tags"
-                            value="Tengo otros animales"> Tengo otros
-                        animales</label>
+                            value="Tengo otros animales">
+                        Tengo otros animales
+                    </label>
                     <label class="etiquetas"><input type="checkbox" class="etiquetas-input" name="tags"
-                            value="Sin otros animales"> Sin otros
-                        animales</label>
+                            value="Sin otros animales">
+                        Sin otros animales
+                    </label>
                     <label class="etiquetas"><input type="checkbox" class="etiquetas-input" name="tags"
-                            value="Experiencia con mascotas"> Experiencia
-                        con
-                        mascotas</label>
+                            value="Experiencia con mascotas">
+                        Experiencia con mascotas
+                    </label>
                     <label class="etiquetas"><input type="checkbox" class="etiquetas-input" name="tags"
-                            value="Primer mascota"> Primer
-                        mascota</label>
+                            value="Primer mascota">
+                        Primer mascota
+                    </label>
                     <label class="etiquetas"><input type="checkbox" class="etiquetas-input" name="tags"
-                            value="Niños en casa"> Niños en
-                        casa</label>
+                            value="Niños en casa">
+                        Niños en casa
+                    </label>
                     <label class="etiquetas"><input type="checkbox" class="etiquetas-input" name="tags"
-                            value="Busco vender"> Busco vender</label>
+                            value="Busco vender">
+                        Busco vender
+                    </label>
                 </div>
 
                 <a href="inicio.html">
