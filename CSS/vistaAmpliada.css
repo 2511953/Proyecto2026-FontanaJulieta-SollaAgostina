@@ -1,0 +1,190 @@
+body {
+    background-color: var(--bg-principal);
+    font-family: "Momo Trust Display", sans-serif;
+}
+
+header {
+    position: relative;
+    height: 300px;
+}
+
+header img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+header::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, transparent 50%, var(--bg-principal) 100%);
+}
+
+.volver {
+    position: absolute;
+    top: 24px;
+    left: 24px;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90px;
+    height: 78px;
+    border: none;
+    background: url(../Imagenes/volver.svg)center / contain no-repeat;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.info {
+    position: relative;
+    margin-top: -60px;
+    padding: 0 40px;
+}
+
+.item-input {
+    display: none;   
+}
+
+.item {
+    display: inline-block;
+    padding: 8px 16px;
+    border: 2px solid #c9184a;
+    border-radius: 20px;
+    background-color: #fadde1;
+    color: #800f2f;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    margin: 5px;
+    cursor:pointer;
+}
+#datos-mascota{
+    border: 3px solid var(--btn-borde);
+    border-radius: 10px;
+    padding-left: 20px;
+    padding-right: 10px;
+    box-shadow: 0 4px 12px grey;
+    margin-bottom: 40px;
+}
+#perfil-familia{
+    border: 3px solid var(--btn-borde);
+    border-radius: 10px;
+    background-color: var(--bg-secciones);
+    padding-left: 20px;
+    padding-right: 10px;
+    box-shadow: 0 4px 12px grey;
+}
+
+.adoptar{
+    display: block;
+    margin: 25px auto 10px auto;
+    border: 2px solid var(--btn-borde);
+    border-radius: 20px;
+    width: 160px;
+    height: 40px;
+    font-family:Momo trust display, static;
+    transition: transform 0.2s ease;
+    background-color: var(--btn-2);
+    cursor:pointer;
+    color:inherit;
+    text-decoration: none;
+    padding-top: 20px;
+    text-align: center;
+}
+.adoptar:hover{
+    transform:scale(1.2);
+    background-color: var(--bg-hover);
+}
+.adoptar:visited{
+    color:inherit;
+}
+
+
+
+
+
+
+footer{
+    background-color:#ff85a1;
+    border-radius: 10px;
+    gap:0px;
+}
+.botonesapps-posicion{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 40px;
+}
+.botonesapps{
+    border: #590d22 2px solid;
+    border-radius: 10px;
+    background-color: #ffcad4;
+    cursor:pointer;
+}
+.botonesapps:hover{
+    background-color: #ff7096;
+    transform:scale(1.2);
+}
+button{
+    margin-right: 15px;
+}
+.img{
+    width:30px;
+    height:auto;
+}
+footer h4{
+    display: block;
+    text-align:justify;
+    margin: 40px 500px auto 10px;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+.copy{
+    display: block;
+    text-align: center;
+    padding-bottom: 10px;
+}
+footer{
+    background-color:#ff85a1;
+    border-radius: 10px;
+    gap:0px;
+}
+.botonesapps-posicion{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 40px;
+}
+.botonesapps{
+    border: #590d22 2px solid;
+    border-radius: 10px;
+    background-color: #ffcad4;
+    cursor:pointer;
+}
+.botonesapps:hover{
+    background-color: #ff7096;
+    transform:scale(1.2);
+}
+button{
+    margin-right: 15px;
+}
+.img{
+    width:30px;
+    height:auto;
+}
+footer h4{
+    display: block;
+    text-align:justify;
+    margin: 40px 500px auto 10px;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+.copy{
+    display: block;
+    text-align: center;
+    padding-bottom: 10px;
+}
