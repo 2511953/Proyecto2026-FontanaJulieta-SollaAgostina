@@ -36,6 +36,7 @@ const publicar = (evento) => {
     evento.preventDefault();
 
     const form = evento.target;
+    if (!validarPublicacion(form)) return;
     const archivo = form.foto1.files[0];
     const generoMarcado = form.querySelector('input[name="genero"]:checked');
     const lector = new FileReader();

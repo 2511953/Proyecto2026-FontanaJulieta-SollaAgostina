@@ -19,7 +19,8 @@ body {
 }
 
 .adopcion{
-    margin-left: 220px;
+    display: block;
+    margin: 0 auto;
 }
 .texto{
     text-align: center;

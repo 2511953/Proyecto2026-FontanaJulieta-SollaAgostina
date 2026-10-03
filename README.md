@@ -20,6 +20,6 @@ MARKDOWN PROYECTO:
 - [x] Sketch
 - [x] Mockup
 - [x] ReadMe.md
-- [] HTML
-- [] CSS
-- [] Java
+- [x] HTML
+- [x] CSS
+- [x] Java
