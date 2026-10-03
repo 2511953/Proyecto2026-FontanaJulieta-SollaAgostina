@@ -1,0 +1,107 @@
+body {
+    background-color: var(--bg-principal);
+    font-family: "Momo Trust Display", sans-serif;
+}
+.volver {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90px;
+    height: 78px;
+    border: none;
+    background: url(../Imagenes/volver.svg) center / contain no-repeat;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.adopcion{
+    margin-left: 220px;
+}
+.texto{
+    text-align: center;
+}
+
+
+
+footer{
+    background-color:var(--bg-nav-footer);
+    border-radius: 10px;
+    gap:0px;
+}
+.botonesapps-posicion{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 40px;
+}
+.botonesapps{
+    border: var(--btn-borde) 2px solid;
+    border-radius: 10px;
+    background-color: var(--bg-principal);
+    cursor:pointer;
+}
+.botonesapps:hover{
+    background-color: var(--btn-1);
+    transform:scale(1.2);
+}
+button{
+    margin-right: 15px;
+}
+.img{
+    width:30px;
+    height:auto;
+}
+footer h4{
+    display: block;
+    text-align:justify;
+    margin: 40px 500px auto 10px;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+.copy{
+    display: block;
+    text-align: center;
+    padding-bottom: 10px;
+}
+footer{
+    background-color:var(--bg-nav-footer);
+    border-radius: 10px;
+    gap:0px;
+}
+.botonesapps-posicion{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 40px;
+}
+.botonesapps{
+    border: var(--btn-borde) 2px solid;
+    border-radius: 10px;
+    background-color: var(--bg-principal);
+    cursor:pointer;
+}
+.botonesapps:hover{
+    background-color: var(--btn-1);
+    transform:scale(1.2);
+}
+button{
+    margin-right: 15px;
+}
+.img{
+    width:30px;
+    height:auto;
+}
+footer h4{
+    display: block;
+    text-align:justify;
+    margin: 40px 500px auto 10px;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+.copy{
+    display: block;
+    text-align: center;
+    padding-bottom: 10px;
+}

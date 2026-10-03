@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="iniciarsesion.css">
+    <link rel="stylesheet" href="../CSS/colores.css">
+    <link rel="stylesheet" href="../CSS/publicarMascota.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Momo+Trust+Display&display=swap"
@@ -13,13 +15,13 @@
     <link rel="icon" type="image/png" sizes="32x32" href="../Imagenes/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../Imagenes/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
-    <link rel="stylesheet" href="../CSS/explorar.css">
     <title>Datos de la Mascota</title>
-    
+
 </head>
+
 <body>
-    
-    <a href="inicio.html" id="boton-volver" title="Volver al inicio">Volver</a>
+
+    <a href="inicio.html" id="boton-volver" title="Volver al inicio" class="volver">Volver</a>
 
     <header>
         <h1>Datos de la mascota</h1>
@@ -29,7 +31,7 @@
     <main>
         <form id="form-publicar" action="#" method="post">
 
-            <fieldset id="grupo-fotos">
+            <fieldset id="grupo-fotos" class="fotos">
                 <legend>Fotos *</legend>
                 <label for="foto1">📷 Foto principal</label>
                 <input type="file" id="foto1" name="foto1" accept="image/*">
@@ -41,110 +43,120 @@
                 <input type="file" id="foto3" name="foto3" accept="image/*">
             </fieldset>
 
-            <p>
-                <label for="nombre">Nombre *</label><br>
-                <input type="text" id="nombre" name="nombre" placeholder="Mochi" maxlength="20">
-            </p>
-
-            <p>
-                <label for="especie">Especie *</label><br>
-                <input list="lista-especies" id="especie" name="especie" placeholder="Perro, Gato, Conejo..." maxlength="20">
-                <datalist id="lista-especies">
-                    <option value="Perro">
-                    <option value="Gato">
-                    <option value="Conejo">
-                    <option value="Hámster">
-                    <option value="Ave">
-                </datalist>
-            </p>
-
-            <p>
-                <label for="raza">Raza *</label><br>
-                <input type="text" id="raza" name="raza" placeholder="Golden Retriever" maxlength="40>
-            </p>
-
-            <div id="edad-tamanio">
+            <div class="datos">
                 <p>
-                    <label for="edad">Edad *</label><br>
-                    <input type="text" id="edad" name="edad" placeholder="2 años" maxlength="20">
+                    <label for="nombre">Nombre *</label><br>
+                    <input type="text" id="nombre" name="nombre" placeholder="Mochi" maxlength="20" class="datos-input">
                 </p>
 
                 <p>
-                    <label for="tamanio">Tamaño *</label><br>
-                    <select id="tamanio" name="tamanio">
-                        <option value="" disabled selected>Grande</option>
-                        <option value="pequenio">Pequeño</option>
-                        <option value="mediano">Mediano</option>
-                        <option value="grande">Grande</option>
-                    </select>
+                    <label for="especie">Especie *</label><br>
+                    <input list="lista-especies" id="especie" name="especie" placeholder="Perro, Gato, Conejo..."
+                        class="datos-input" maxlength="20">
+                    <datalist id="lista-especies">
+                        <option value="Perro">
+                        <option value="Gato">
+                        <option value="Conejo">
+                        <option value="Hámster">
+                        <option value="Ave">
+                    </datalist>
                 </p>
+
+                <p>
+                    <label for="raza">Raza *</label><br>
+                    <input type="text" id="raza" name="raza" placeholder="Golden Retriever" maxlength="40"
+                        class="datos-input">
+                </p>
+
+                <div id=" edad-tamanio">
+                    <p>
+                        <label for="edad">Edad *</label><br>
+                        <input type="text" id="edad" name="edad" placeholder="2 años" maxlength="20"
+                            class="datos-input">
+                    </p>
+
+                    <p>
+                        <label for="tamanio">Tamaño *</label><br>
+                        <select id="tamanio" name="tamanio" class="datos-input">
+                            <option value="" disabled selected>Grande</option>
+                            <option value="pequenio">Pequeño</option>
+                            <option value="mediano">Mediano</option>
+                            <option value="grande">Grande</option>
+                        </select>
+                    </p>
+                </div>
             </div>
 
-            <fieldset id="grupo-genero">
-                <legend>Género *</legend>
-                <input type="radio" id="macho" name="genero" value="macho">
-                <label for="macho">Macho</label>
+            <div>
+                <fieldset id="grupo-genero">
+                    <legend>Género *</legend>
+                    <input type="radio" id="macho" name="genero" value="macho" class="etiquetas-input">
+                    <label for="macho" class="etiquetas">Macho</label>
 
-                <input type="radio" id="hembra" name="genero" value="hembra">
-                <label for="hembra">Hembra</label>
-            </fieldset>
+                    <input type="radio" id="hembra" name="genero" value="hembra" class="etiquetas-input">
+                    <label for="hembra" class="etiquetas">Hembra</label>
+                </fieldset>
 
-            <fieldset id="grupo-salud">
-                <legend>Salud</legend>
-                <input type="checkbox" id="vacunado" name="salud" value="vacunado">
-                <label for="vacunado">Vacunado</label>
+                <fieldset id="grupo-salud">
+                    <legend>Salud</legend>
+                    <input type="checkbox" id="vacunado" name="salud" value="vacunado" class="etiquetas-input">
+                    <label for="vacunado" class="etiquetas">Vacunado</label>
 
-                <input type="checkbox" id="castrado" name="salud" value="castrado">
-                <label for="castrado">Castrado/Esterilizado</label>
+                    <input type="checkbox" id="castrado" name="salud" value="castrado" class="etiquetas-input">
+                    <label for="castrado" class="etiquetas">Castrado/Esterilizado</label>
 
-                <input type="checkbox" id="desparasitado" name="salud" value="desparasitado">
-                <label for="desparasitado">Desparasitado</label>
+                    <input type="checkbox" id="desparasitado" name="salud" value="desparasitado"
+                        class="etiquetas-input">
+                    <label for="desparasitado" class="etiquetas">Desparasitado</label>
 
-                <input type="checkbox" id="pedigree" name="salud" value="pedigree">
-                <label for="pedigree">Con pedigree</label>
-            </fieldset>
+                    <input type="checkbox" id="pedigree" name="salud" value="pedigree" class="etiquetas-input">
+                    <label for="pedigree" class="etiquetas">Con pedigree</label>
+                </fieldset>
 
-            <fieldset id="grupo-personalidad">
-                <legend>Personalidad</legend>
-                <input type="checkbox" id="sociable" name="personalidad" value="sociable">
-                <label for="sociable">Sociable</label>
+                <fieldset id="grupo-personalidad">
+                    <legend>Personalidad</legend>
+                    <input type="checkbox" id="sociable" name="personalidad" value="sociable" class="etiquetas-input">
+                    <label for="sociable" class="etiquetas">Sociable</label>
 
-                <input type="checkbox" id="timido" name="personalidad" value="timido">
-                <label for="timido">Tímido</label>
+                    <input type="checkbox" id="timido" name="personalidad" value="timido" class="etiquetas-input">
+                    <label for="timido" class="etiquetas">Tímido</label>
 
-                <input type="checkbox" id="activo" name="personalidad" value="activo">
-                <label for="activo">Activo</label>
+                    <input type="checkbox" id="activo" name="personalidad" value="activo" class="etiquetas-input">
+                    <label for="activo" class="etiquetas">Activo</label>
 
-                <input type="checkbox" id="tranquilo" name="personalidad" value="tranquilo">
-                <label for="tranquilo">Tranquilo</label>
+                    <input type="checkbox" id="tranquilo" name="personalidad" value="tranquilo" class="etiquetas-input">
+                    <label for="tranquilo" class="etiquetas">Tranquilo</label>
 
-                <input type="checkbox" id="jugueton" name="personalidad" value="jugueton">
-                <label for="jugueton">Juguetón</label>
-            </fieldset>
+                    <input type="checkbox" id="jugueton" name="personalidad" value="jugueton" class="etiquetas-input">
+                    <label for="jugueton" class="etiquetas">Juguetón</label>
+                </fieldset>
 
-            <fieldset id="grupo-apto">
-                <legend>Apto para</legend>
-                <input type="checkbox" id="apto-ninios" name="apto" value="ninios">
-                <label for="apto-ninios">Apto niños</label>
+                <fieldset id="grupo-apto">
+                    <legend>Apto para</legend>
+                    <input type="checkbox" id="apto-ninios" name="apto" value="ninios" class="etiquetas-input">
+                    <label for="apto-ninios" class="etiquetas">Apto niños</label>
 
-                <input type="checkbox" id="apto-animales" name="apto" value="otros-animales">
-                <label for="apto-animales">Apto otros animales</label>
+                    <input type="checkbox" id="apto-animales" name="apto" value="otros-animales"
+                        class="etiquetas-input">
+                    <label for="apto-animales" class="etiquetas">Apto otros animales</label>
 
-                <input type="checkbox" id="adentro" name="apto" value="adentro">
-                <label for="indoor">Adentro</label>
+                    <input type="checkbox" id="adentro" name="apto" value="adentro" class="etiquetas-input">
+                    <label for="indoor" class="etiquetas">Adentro</label>
 
-                <input type="checkbox" id="afuera" name="apto" value="afuera">
-                <label for="outdoor">Afuera</label>
-            </fieldset>
+                    <input type="checkbox" id="afuera" name="apto" value="afuera" class="etiquetas-input">
+                    <label for="outdoor" class="etiquetas">Afuera</label>
+                </fieldset>
+            </div>
 
             <p>
                 <label for="descripcion">Descripción *</label><br>
                 <textarea id="descripcion" name="descripcion" rows="6" cols="50" minlength="20" maxlength="500"
-                    placeholder="Contá la historia de tu mascota, su personalidad y por qué buscás un nuevo hogar..."></textarea>
+                    placeholder="Contá la historia de tu mascota, su personalidad y por qué buscás un nuevo hogar..."
+                    class="descripcion"></textarea>
             </p>
             <p id="contador"><small>0/20 mín.</small></p>
 
-            <a href="inicio.html" type="submit" id="boton-publicar">Publicar ahora 🐾</a>
+            <a href="inicio.html" type="submit" id="boton-publicar" class="publicar">Publicar ahora 🐾</a>
 
         </form>
     </main>
@@ -169,5 +181,5 @@
         <p class="copy">&copy; 2026, Patitas · Hecho con amor desde Argentina </p>
     </footer>
 </body>
-</html>
 
+</html>
