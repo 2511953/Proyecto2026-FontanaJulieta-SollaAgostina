@@ -16,25 +16,27 @@
     <link rel="icon" type="image/png" sizes="16x16" href="../Imagenes/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
     <link rel="stylesheet" href="../CSS/explorar.css">
+    <script type="text/javascript" src="../JS/mascotas.js"></script>
+    <script type="text/javascript" src="../JS/adoptar.js"></script>
     <title>Adopcion</title>
 
 </head>
 
 <body>
     <a href="Explorar.html" class="volver">Volver</a>
-
+    
     <main>
         <section id="mensaje-adopcion">
             <img src="../Imagenes/adopcion.png" class="adopcion">
             <div class="texto">
-                <h1>¡Mochi te está esperando!</h1>
-                <p id="texto">
-                    Conectate con Familia Torres y comenzá una historia de amor a cuatro patas.
+                <h1 id="titulo">¡<span id="nombre-mascota">Tu mascota</span> te está esperando!</h1>
+                <p id="texto-principal">
+                    Conectate con <span id="publicado-por">su familia</span> y comenzá una historia de amor a cuatro patas.
                 </p>
-                <p id="texto">
+                <p id="texto-secundario">
                     <small>
-                        Le notificaremos a <strong>Familia Torres</strong> que alguien
-                        especial quiere conocer a Mochi.
+                        Le notificaremos a <strong id="publicado-por-2">su familia</strong> que alguien
+                        especial quiere conocer a <span id="nombre-mascota-2">la mascota</span>.
                     </small>
                 </p>
             </div>
