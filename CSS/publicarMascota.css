@@ -148,7 +148,7 @@ form > p {
     margin: 25px auto 40px;
     border: 2px solid var(--btn-borde);
     border-radius: 20px;
-    background-color: var(btn-2);
+    background-color: var(--btn-2);
     color: var(--btn-borde);
     font-weight: bold;
     text-decoration: none;
