@@ -1,0 +1,204 @@
+body {
+    background-color: var(--bg-principal);
+    font-family: "Momo Trust Display", sans-serif;
+}
+input, select, textarea, button {
+    font-family: inherit;
+}
+
+.volver {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90px;
+    height: 78px;
+    border: none;
+    background: url("../Imagenes/volver.svg") center / contain no-repeat;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.fotos {
+    border: 3px solid var(--btn-hover);
+    border-radius: 10px;
+    background-color: var(--bg-secciones);
+    max-width: 1500px;
+    margin: 40px auto;
+    padding: 15px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 15px 20px;
+}
+
+.fotos label {
+    font-weight: bold;
+}
+
+.fotos input[type="file"] {
+    width: 300px;
+    padding: 4px;
+    border: 2px solid var(--btn-borde);
+    border-radius: 20px;
+    background-color: white;
+    color: var(--btn-borde);
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.fotos input[type="file"]::file-selector-button {
+    font-family: inherit;
+    font-weight: bold;
+    background: var(--btn-3);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 6px 14px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.fotos input[type="file"]::file-selector-button:hover {
+    background: var(--btn-hover);
+}
+
+.datos,
+#grupo-genero,
+#grupo-salud,
+#grupo-personalidad,
+#grupo-apto {
+    border: 3px solid var(--btn-hover);
+    border-radius: 10px;
+    background-color: var(--bg-secciones);
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 15px 20px;
+    box-sizing: border-box;
+}
+
+legend {
+    font-weight: bold;
+    padding: 0 8px;
+}
+
+.datos-input {
+    width: 300px;
+    padding: 6px 12px;
+    margin: 8px 0;
+    border: 2px solid var(--btn-borde);
+    border-radius: 10px;
+    background-color: var(--bg-espacios);
+    box-sizing: border-box;
+}
+
+input::placeholder {
+    text-align: center;
+}
+
+.etiquetas-input {
+    display: none;
+}
+
+.etiquetas {
+    display: inline-block;
+    padding: 8px 16px;
+    margin: 5px;
+    border: 2px solid var(--btn-hover);
+    border-radius: 20px;
+    background-color: var(--bg-secciones);
+    color: var(--texto-patitas);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.etiquetas:hover,
+.etiquetas-input:checked + .etiquetas {
+    background-color: var(--btn-1);
+    color: white;
+}
+
+form > p {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.descripcion {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 12px 16px;
+    border: 3px solid var(--btn-hover);
+    border-radius: 10px;
+    background-color: var(--bg-secciones);
+    font-size: 15px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+.publicar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 180px;
+    height: 50px;
+    margin: 25px auto 40px;
+    border: 2px solid var(--btn-borde);
+    border-radius: 20px;
+    background-color: var(btn-2);
+    color: var(--btn-borde);
+    font-weight: bold;
+    text-decoration: none;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.publicar:hover {
+    transform: scale(1.1);
+}
+
+footer {
+    background-color: var(--bg-nav-footer);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+footer h4 {
+    max-width: 700px;
+    text-align: justify;
+    margin: 0 0 20px;
+}
+
+.botonesapps-posicion {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    padding-right: 20px;
+}
+
+.botonesapps {
+    border: 2px solid var(--btn-borde);
+    border-radius: 10px;
+    background-color: var(--bg-principal);
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.botonesapps:hover {
+    background-color: var(--btn-1);
+    transform: scale(1.2);
+}
+
+.img {
+    width: 30px;
+    height: auto;
+}
+
+.copy {
+    text-align: center;
+    margin: 15px 0 0;
+}

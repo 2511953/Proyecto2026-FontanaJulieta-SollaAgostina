@@ -55,10 +55,10 @@ header::after {
 .item {
     display: inline-block;
     padding: 8px 16px;
-    border: 2px solid #c9184a;
+    border: 2px solid var(--btn-hover);
     border-radius: 20px;
-    background-color: #fadde1;
-    color: #800f2f;
+    background-color: var(--bg-secciones);
+    color: var(--texto-patitas);
     cursor: pointer;
     transition: all 0.2s ease;
     margin: 5px;
@@ -106,12 +106,8 @@ header::after {
 }
 
 
-
-
-
-
 footer{
-    background-color:#ff85a1;
+    background-color:var(--bg-nav-footer);
     border-radius: 10px;
     gap:0px;
 }
@@ -121,52 +117,13 @@ footer{
     padding-right: 40px;
 }
 .botonesapps{
-    border: #590d22 2px solid;
+    border: var(--btn-borde) 2px solid;
     border-radius: 10px;
-    background-color: #ffcad4;
+    background-color: var(--bg-principal);
     cursor:pointer;
 }
 .botonesapps:hover{
-    background-color: #ff7096;
-    transform:scale(1.2);
-}
-button{
-    margin-right: 15px;
-}
-.img{
-    width:30px;
-    height:auto;
-}
-footer h4{
-    display: block;
-    text-align:justify;
-    margin: 40px 500px auto 10px;
-    padding-top: 20px;
-    padding-left: 20px;
-}
-.copy{
-    display: block;
-    text-align: center;
-    padding-bottom: 10px;
-}
-footer{
-    background-color:#ff85a1;
-    border-radius: 10px;
-    gap:0px;
-}
-.botonesapps-posicion{
-    display: flex;
-    justify-content: flex-end;
-    padding-right: 40px;
-}
-.botonesapps{
-    border: #590d22 2px solid;
-    border-radius: 10px;
-    background-color: #ffcad4;
-    cursor:pointer;
-}
-.botonesapps:hover{
-    background-color: #ff7096;
+    background-color: var(--btn-1);
     transform:scale(1.2);
 }
 button{

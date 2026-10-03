@@ -3,6 +3,7 @@
     --bg-principal: #ffcad4;
     --bg-secciones: #fadde1;
     --bg-nav-footer: #ff85a1;
+    --bg-espacios: #ebb3a9;
 
   /* Botones */
     --btn-1: #ff7096;
@@ -10,8 +11,8 @@
     --btn-3: #ea9ab2;
     --btn-borde: #590d22;
     --btn-hover: #c9184a;
+    --btn-ini-hover: #d691a6;
 
   /* Bordes y texto */
-    --borde-secciones: #c9184a;
     --texto-patitas: #800f2f;
 }
