@@ -1,3 +1,4 @@
+/* Mascotas */
 const mascotas = [
   {
     id: 1,
@@ -16,7 +17,7 @@ const mascotas = [
       "Buscamos una familia tranquila que pase tiempo en casa y quiera un compañero cariñoso para el día a día.",
     tipo: "Adopción",
     publicadoPor: "Ana Martínez",
-    imagen: "Bigotes.jpg",
+    imagen: "../Imagenes/mascotas/Bigotes.jpg",
   },
   {
     id: 2,
@@ -35,7 +36,7 @@ const mascotas = [
       "Buscamos un hogar con espacio para que pueda saltar libre y alguien que sepa cuidar conejos.",
     tipo: "Adopción",
     publicadoPor: "Sofía Ramírez",
-    imagen: "canela.jpg",
+    imagen: "../Imagenes/mascotas/canela.jpg",
   },
   {
     id: 3,
@@ -54,7 +55,7 @@ const mascotas = [
       "Buscamos una familia deportista o con patio grande, que tenga tiempo para entrenarla y jugar con ella.",
     tipo: "Adopción",
     publicadoPor: "Refugio Huellitas",
-    imagen: "Kira.jpg",
+    imagen: "../Imagenes/mascotas/Kira.jpg",
   },
   {
     id: 4,
@@ -73,7 +74,7 @@ const mascotas = [
       "Buscamos una familia con espacio al aire libre, que disfrute de paseos largos y que pueda darle todo el amor que merece.",
     tipo: "Adopción",
     publicadoPor: "Familia Torres",
-    imagen: "Mochi.jpg",
+    imagen: "../Imagenes/mascotas/Mochi.jpg",
   },
   {
     id: 5,
@@ -92,7 +93,7 @@ const mascotas = [
       "Buscamos una familia que lo deje explorar y que le dé verduras frescas y mucho cariño.",
     tipo: "Adopción",
     publicadoPor: "Valentina López",
-    imagen: "oreo.jpg",
+    imagen: "../Imagenes/mascotas/oreo.jpg",
   },
   {
     id: 6,
@@ -111,7 +112,7 @@ const mascotas = [
       "Buscamos un hogar silencioso, sin muchos ruidos, con una persona paciente que respete sus tiempos.",
     tipo: "Adopción",
     publicadoPor: "Carolina Díaz",
-    imagen: "Tita.jpg",
+    imagen: "../Imagenes/mascotas/Tita.jpg",
   },
   {
     id: 7,
@@ -130,6 +131,76 @@ const mascotas = [
       "Buscamos una familia con patio que quiera un compañero fiel y le dé una segunda oportunidad.",
     tipo: "Adopción",
     publicadoPor: "Refugio Patitas",
-    imagen: "Rocky.jpg",
+    imagen: "../Imagenes/mascotas/Rocky.jpg",
   },
 ];
+/**
+ * Consulta el id para encontrar la mascota correspondiente
+ * @method obtenerMascota()
+ */
+const obtenerMascota = () =>{
+  const id = Number(new URLSearchParams(window.location.search).get("id"));
+  return mascotas.find(m => m.id === id);
+};
+/**
+ * Busca las etiquetas de la mascota correspondiente y las muestra
+ * @method cargarEtiquetas ()
+ * @param etiquetas - etiquetas de caracteristicas de cada mascota 
+ */
+
+const cargarEtiquetas = (etiquetas) => {
+  ul.innerHTML = "";
+etiquetas.forEach(texto => {
+  ul.innerHTML += `<li class="item">${texto}</li>`;
+});
+}
+/**
+ * Muestra los datos de la mascota seleccionada
+ * @method mostrarMascota()
+ * @param mascota - los datos de la mascota que se selecciono 
+ */
+
+const mostrarMascota = (mascota) =>{
+  document.title = `${mascota.nombre}`;
+
+  document.querySelector("#mascota-adopcion").innerHTML = 
+    `<img src="${mascota.imagen}" alt="${mascota.nombre}, ${mascota.raza}">
+    <a href="Explorar.html" id="boton-volver" title="Volver a explorar" class="volver">Volver</a>`;
+
+  document.querySelector("#mascota").innerHTML = 
+    `<h1>${mascota.nombre}</h1>
+    <h3>${mascota.raza} · ${mascota.edad}</h3>`;
+
+  document.querySelector("#tipo-publicacion").innerHTML = 
+    `<strong>${mascota.tipo}</strong>`;
+
+  const etiquetas = [mascota.genero, mascota.tamanio, ...mascota.salud, ...mascota.personalidad, ...mascota.apto];
+
+  document.querySelector("#etiquetas").innerHTML = etiquetas
+    .map(texto => `<li class="item">${texto}</li>`)
+    .join("");
+
+  document.querySelector("#datos-mascota").innerHTML = 
+    `<h2>Sobre ${mascota.nombre}</h2>
+    <p>${mascota.descripcion}</p>`;
+
+  document.querySelector("#perfil-familia").innerHTML = 
+    `<h2>🏠 Perfil del adoptante ideal</h2>
+    <p>${mascota.perfilAdoptante}</p>`;
+
+  document.querySelector("#datos-publicante").innerHTML =
+    `<small>Publicado por <strong>${mascota.publicadoPor}</strong></small>`;
+};
+/**
+ * Hace que arranque lo que hicimos antes
+ * @method iniciar()
+ */
+
+const iniciar = () => {
+  const mascota = obtenerMascota();
+  if (mascota) mostrarMascota(mascota);
+}
+document.addEventListener("DOMContentLoaded", iniciar);
+
+
+

@@ -15,6 +15,8 @@
     <link rel="icon" type="image/png" sizes="32x32" href="../Imagenes/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../Imagenes/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
+    <script type="text/javascript" src="../Java/mascotas.js"></script>
+    <script type="text/javascript" src="../Java/publicarMascota.js"></script>
     <title>Datos de la Mascota</title>
 
 </head>
@@ -141,10 +143,10 @@
                     <label for="apto-animales" class="etiquetas">Apto otros animales</label>
 
                     <input type="checkbox" id="adentro" name="apto" value="adentro" class="etiquetas-input">
-                    <label for="indoor" class="etiquetas">Adentro</label>
+                    <label for="adentro" class="etiquetas">Adentro</label>
 
                     <input type="checkbox" id="afuera" name="apto" value="afuera" class="etiquetas-input">
-                    <label for="outdoor" class="etiquetas">Afuera</label>
+                    <label for="afuera" class="etiquetas">Afuera</label>
                 </fieldset>
             </div>
 
@@ -155,8 +157,18 @@
                     class="descripcion"></textarea>
             </p>
             <p id="contador"><small>0/20 mín.</small></p>
+            <p>
+                <label for="perfilAdoptante">Perfil del adoptante ideal</label><br>
+                <textarea id="perfilAdoptante" name="perfilAdoptante" rows="4" cols="50"
+                    placeholder="¿Qué tipo de familia buscás?" class="descripcion"></textarea>
+            </p>
 
-            <a href="inicio.html" type="submit" id="boton-publicar" class="publicar">Publicar ahora 🐾</a>
+            <p>
+                <label for="publicadoPor">Tu nombre *</label><br>
+                <input type="text" id="publicadoPor" name="publicadoPor" maxlength="40" class="datos-input" required>
+            </p>
+
+            <button type="submit" id="boton-publicar" class="publicar">Publicar ahora 🐾</button>
 
         </form>
     </main>
