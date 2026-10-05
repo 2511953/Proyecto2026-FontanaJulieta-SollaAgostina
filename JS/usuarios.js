@@ -33,7 +33,7 @@ const registrar = (evento) => {
     usuarios.push(usuario);
     localStorage.setItem("usuarios", JSON.stringify(usuarios));
 
-    window.location.href = "inicio.html";
+    window.location.href = "iniciarsesion.html";
 };
 
 /**
