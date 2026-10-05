@@ -20,13 +20,13 @@ MARKDOWN PROYECTO:
 - [x] Mockup
 - [x] ReadMe.md
 - [x] HTML
-  - [] index
-  - [] crear cuenta
-  - [] iniciar sesion
-  - [] inicio
-  - [] Explorar
-  - [] Vista ampliada
-  - [] Adoptar
+  - [x] index
+  - [x] crear cuenta
+  - [x] iniciar sesion
+  - [x] inicio
+  - [x] Explorar
+  - [x] Vista ampliada
+  - [x] Adoptar
 - [x] CSS
   - [] Colores
   - [] index
