@@ -127,3 +127,47 @@ const validarPublicacion = (form) => {
 
     return true;
 };
+/**
+ * Verifica que no exista una cuenta con el mail ingresado
+ * @method emailRegistrado()
+ * @param {string} email - email de la persona ingresado en crear cuenta
+ * @return {boolean} true si ya existe otro email igual
+ */
+const emailRegistrado = (email) =>{
+    const usuarios= JSON.parse(localStorage.getItem("usuarios"))
+    if(usuarios.some(u => u.email===email.trim().toLowerCase())){
+        alert ("El email ingresado ya esta vinculado a una cuenta existente")
+        return true;
+    }
+    return false;
+}
+
+/**
+ * Valida el formulario de crear cuenta 
+ * @method validaCuenta()
+ * @param {object} form - el formulario de crear cuenta
+ * @return {boolean} false - si no se completo algun campo 
+ */
+const validarCuenta = (form) =>{
+    if (campoVacio(form.nombre.value, "nombre")) return false;
+    if (sinSeleccion(form.sexo.value, "sexo")) return false;
+    if (noEsNumero(form.dni.value, "DNI")) return false;
+    if (campoVacio(form.email.value, "email")) return false;
+    if (emailInvalido(form.email.value)) return false;
+    if (emailRegistrado(form.email.value)) return false;
+    if (textoCorto(form.password.value, 6, "contraseña")) return false;
+    if (passwordsDistintas(form.password.value, form.password2.value)) return false;
+    if (campoVacio(form.ubicacion.value, "ubicación")) return false;
+    return true;
+};
+/**
+ * Verifica que los campos de iniciar sesion tengan algun valor
+ * @method verificarCamposCompletados()
+ * @param {object} form - el formulario de inicio de sesion
+ * @return {boolean} true - si todo esta bien 
+ */
+verificarCamposCompletados = (form) =>{
+    if(campoVacio(form.email.value, "email")) return false;
+    if(campoVacio(form.password.value, "contraseña")) return false;
+    return true;
+}

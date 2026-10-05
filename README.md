@@ -39,7 +39,7 @@ MARKDOWN PROYECTO:
 - [x] Java
   - [x] mascotas
   - [x] Errores
-  - [] crear cuenta
+  - [x] usuarios
   - [x] Explorar
   - [x] Vista ampliada
   - [x] Adoptar

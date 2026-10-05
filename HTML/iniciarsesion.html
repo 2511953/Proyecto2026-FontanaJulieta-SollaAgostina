@@ -16,6 +16,8 @@
     <link rel="icon" type="image/png" sizes="16x16" href="../Imagenes/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
     <link rel="manifest" href="/site.webmanifest">
+    <script type="text/javascript" src="../JS/usuarios.js"></script>
+    <script type="text/javascript" src="../JS/errores.js"></script>
     <title>Iniciar Sesion</title>
 </head>
 
@@ -28,7 +30,7 @@
             <h2>¡Bienvenido de vuelta! 🐾</h2>
             <p>Ingresá tus datos para continuar</p>
 
-            <form name="Iniciar Sesion">
+            <form id="form-login">
 
                 <p>
                     <label for="email">EMAIL</label>
@@ -36,13 +38,13 @@
                 </p>
 
                 <p>
-                    <label for="contraseña">CONTRASEÑA</label>
-                    <input type="password" name="Contraseña" placeholder="*********" id="password" maxlength="16">
+                    <label for="password">CONTRASEÑA</label>
+                    <input type="password" name="password" placeholder="*********" id="password" maxlength="16">
                 </p>
 
                 <a href="#" class="registrate">¿Olvidaste tu contraseña?</a>
 
-                <a href="inicio.html" class="entrar">Entrar</a>
+                <button type="submit" class="entrar">Entrar</button>
 
 
                 <p class="registro">
