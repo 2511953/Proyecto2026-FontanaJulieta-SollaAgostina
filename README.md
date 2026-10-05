@@ -37,9 +37,9 @@ MARKDOWN PROYECTO:
   - [x] Vista ampliada
   - [x] Adoptar
 - [x] Java
-  - [] mascotas
-  - [] Errores
+  - [x] mascotas
+  - [x] Errores
   - [] crear cuenta
-  - [] Explorar
-  - [] Vista ampliada
-  - [] Adoptar
+  - [x] Explorar
+  - [x] Vista ampliada
+  - [x] Adoptar
