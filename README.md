@@ -28,14 +28,14 @@ MARKDOWN PROYECTO:
   - [x] Vista ampliada
   - [x] Adoptar
 - [x] CSS
-  - [] Colores
-  - [] index
-  - [] crear cuenta
-  - [] iniciar sesion
-  - [] inicio
-  - [] Explorar
-  - [] Vista ampliada
-  - [] Adoptar
+  - [x] Colores
+  - [x] index
+  - [x] crear cuenta
+  - [x] iniciar sesion
+  - [x] inicio
+  - [x] Explorar
+  - [x] Vista ampliada
+  - [x] Adoptar
 - [x] Java
   - [] mascotas
   - [] Errores
