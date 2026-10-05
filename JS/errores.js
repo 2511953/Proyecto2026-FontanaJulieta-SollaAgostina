@@ -134,7 +134,7 @@ const validarPublicacion = (form) => {
  * @return {boolean} true si ya existe otro email igual
  */
 const emailRegistrado = (email) =>{
-    const usuarios= JSON.parse(localStorage.getItem("usuarios"))
+    const usuarios= JSON.parse(localStorage.getItem("usuarios")) || [];
     if(usuarios.some(u => u.email===email.trim().toLowerCase())){
         alert ("El email ingresado ya esta vinculado a una cuenta existente")
         return true;
@@ -144,11 +144,11 @@ const emailRegistrado = (email) =>{
 
 /**
  * Valida el formulario de crear cuenta 
- * @method validaCuenta()
+ * @method validaRegistro()
  * @param {object} form - el formulario de crear cuenta
  * @return {boolean} false - si no se completo algun campo 
  */
-const validarCuenta = (form) =>{
+const validarRegistro = (form) =>{
     if (campoVacio(form.nombre.value, "nombre")) return false;
     if (sinSeleccion(form.sexo.value, "sexo")) return false;
     if (noEsNumero(form.dni.value, "DNI")) return false;
@@ -162,11 +162,11 @@ const validarCuenta = (form) =>{
 };
 /**
  * Verifica que los campos de iniciar sesion tengan algun valor
- * @method verificarCamposCompletados()
+ * @method validarLogin()
  * @param {object} form - el formulario de inicio de sesion
  * @return {boolean} true - si todo esta bien 
  */
-verificarCamposCompletados = (form) =>{
+const validarLogin = (form) =>{
     if(campoVacio(form.email.value, "email")) return false;
     if(campoVacio(form.password.value, "contraseña")) return false;
     return true;
