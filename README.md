@@ -43,3 +43,7 @@ MARKDOWN PROYECTO:
   - [x] Explorar
   - [x] Vista ampliada
   - [x] Adoptar
+
+
+GITHUB PAGES:
+https://2511953.github.io/Proyecto2026-FontanaJulieta-SollaAgostina/ 
