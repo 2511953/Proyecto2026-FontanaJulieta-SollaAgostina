@@ -30,7 +30,9 @@ Plataforma web de adopción de mascotas que conecta familias adoptantes con quie
 
 ### Para dar en adopción
 
-| 7 |**Publicar mascota**| Formulario con todos los datos del animal (obligatorios) y un botón "Publicar ahora". Al publicar, vuelve a la página de inicio.
+| Página | Nombre               | Descripción                                                                                                                      |
+| ------ | -------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
+| 7      | **Publicar mascota** | Formulario con todos los datos del animal (obligatorios) y un botón "Publicar ahora". Al publicar, vuelve a la página de inicio. |
 
 ## Tecnologías utilizadas
 
