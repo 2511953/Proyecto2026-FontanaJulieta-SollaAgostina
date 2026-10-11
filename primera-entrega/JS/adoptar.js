@@ -37,5 +37,3 @@ const mostrarMensaje = () => {
         document.getElementById("texto-secundario").innerText = "";
     }
 };
-
-document.addEventListener("DOMContentLoaded", mostrarMensaje);

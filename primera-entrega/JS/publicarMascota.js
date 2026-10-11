@@ -70,5 +70,3 @@ const publicar = (evento) => {
 const iniciar = () => {
     document.querySelector("#form-publicar").addEventListener("submit", publicar);
 };
-
-document.addEventListener("DOMContentLoaded", iniciar);

@@ -27,5 +27,3 @@ const iniciar = () => {
     mostrarCantidad();
     mostrarTarjetas();
 };
-
-document.addEventListener("DOMContentLoaded", iniciar);
