@@ -4,8 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../CSS/colores.css">
-    <link rel="stylesheet" href="../CSS/crearcuenta.css">
+    <link rel="stylesheet" href="../style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Momo+Trust+Display&display=swap"
@@ -20,7 +19,7 @@
     <title>Crear Cuenta</title>
 </head>
 
-<body>
+<body class="pag-crear-cuenta" onload="iniciar()">
     <header>
         <a href="../index.html" id="boton-volver" title="Volver al index" class="volver">Volver</a>
     </header>
@@ -32,7 +31,7 @@
             <form id="form-registro">
                 <label for="nombre">NOMBRE COMPLETO</label><br>
                 <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" maxlength="50"
-                    class="espacios"><br><br>
+                    class="espacios"><br>
 
                 <label for="sexo">SEXO</label><br>
                 <select id="sexo" name="sexo" class="espacios">
@@ -40,27 +39,27 @@
                     <option value="masculino">Masculino</option>
                     <option value="femenino">Femenino</option>
                     <option value="otro">Otro</option>
-                </select><br><br>
+                </select><br>
 
                 <label for="dni">DNI</label><br>
-                <input type="number" id="dni" name="dni" placeholder="Ingrese su DNI" class="espacios"><br><br>
+                <input type="number" id="dni" name="dni" placeholder="Ingrese su DNI" class="espacios"><br>
 
                 <label for="email">EMAIL</label><br>
                 <input type="email" id="email" name="email" placeholder="usuario@dominio.com" maxlength="30"
-                    class="espacios"><br><br>
+                    class="espacios"><br>
 
                 <label for="password">CONTRASEÑA</label><br>
                 <input type="password" id="password" name="password" placeholder="********" maxlength="16"
                     class="espacios"><br>
-                <small>Usá letras y números para mayor seguridad</small><br><br>
+                <small>Usá letras y números para mayor seguridad</small><br>
 
                 <label for="password2">CONFIRMAR CONTRASEÑA</label><br>
                 <input type="password" id="password2" name="password2" placeholder="********" class="espacios"><br>
-                <small>Ambas contraseñas deben ser iguales</small><br><br>
+                <small>Ambas contraseñas deben ser iguales</small><br>
 
                 <label for="ubicacion">UBICACIÓN</label><br>
                 <input type="text" id="ubicacion" name="ubicacion" placeholder="Cordoba, Argentina"
-                    class="espacios"><br><br>
+                    class="espacios"><br>
 
                 <p>CONTANOS UN POCO SOBRE VOS</p>
                 <p>Elegí todas las opciones que te representen. Las usamos para el sistema de match.</p>

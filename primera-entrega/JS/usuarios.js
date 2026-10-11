@@ -74,5 +74,3 @@ const iniciar = () => {
     if (formRegistro) formRegistro.addEventListener("submit", registrar);
     if (formLogin) formLogin.addEventListener("submit", iniciarSesion);
 };
-
-document.addEventListener("DOMContentLoaded", iniciar);

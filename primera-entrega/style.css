@@ -1,0 +1,521 @@
+/* ===== Colores ===== */
+:root {
+    /* Fondos */
+    --bg-principal: #ffcad4;
+    --bg-secciones: #fadde1;
+    --bg-nav-footer: #ff85a1;
+    --bg-espacios: #ebb3a9;
+
+    /* Botones */
+    --btn-1: #ff7096;
+    --btn-2: #fbb1bd;
+    --btn-3: #ea9ab2;
+    --btn-borde: #590d22;
+    --btn-hover: #c9184a;
+    --btn-ini-hover: #d691a6;
+
+    /* Bordes y texto */
+    --texto-patitas: #800f2f;
+}
+
+/* ===== Base ===== */
+body {
+    background-color: var(--bg-principal);
+    font-family: "Momo Trust Display", sans-serif;
+}
+
+input, select, textarea, button {
+    font-family: inherit;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+input::placeholder {
+    text-align: center;
+}
+
+legend {
+    font-weight: bold;
+    padding: 0 8px;
+}
+
+small {
+    padding-left: 20px;
+}
+
+/* ===== Nav ===== */
+nav {
+    display: flex;
+    background-color: var(--bg-nav-footer);
+    border-radius: 10px;
+}
+
+nav #logo {
+    width: 200px;
+    height: auto;
+    margin: 0 -40px 0 0;
+}
+
+#textologo {
+    font-family: "Jua", sans-serif;
+    padding-top: 30px;
+    color: var(--btn-borde);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    padding-top: 30px;
+}
+
+nav a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--bg-nav-footer);
+    color: white;
+    border-radius: 20px;
+    transition: all 0.2s ease;
+}
+
+.pag-explorar nav a {
+    background-color: var(--btn-1);
+}
+
+nav a:hover {
+    background-color: var(--btn-hover);
+    transform: scale(1.2);
+}
+
+/* ===== Footer ===== */
+footer {
+    background-color: var(--bg-nav-footer);
+    border-radius: 10px;
+}
+
+footer h4 {
+    text-align: justify;
+    margin: 40px 500px 0 10px;
+    padding: 20px 0 0 20px;
+}
+
+.botonesapps-posicion {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    padding-right: 55px;
+}
+
+.botonesapps {
+    border: 2px solid var(--btn-borde);
+    border-radius: 10px;
+    background-color: var(--bg-principal);
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.botonesapps:hover {
+    background-color: var(--btn-1);
+    transform: scale(1.2);
+}
+
+.img {
+    width: 30px;
+    height: auto;
+}
+
+.copy {
+    display: block;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+/* ===== Botón volver ===== */
+.volver {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90px;
+    height: 78px;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+    border: none;
+    background: url("Imagenes/volver.svg") center / contain no-repeat;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.pag-iniciar-sesion .volver,
+.pag-crear-cuenta .volver,
+.pag-vista .volver {
+    position: absolute;
+    top: 24px;
+    left: 24px;
+    z-index: 1;
+}
+
+.pag-explorar .volver {
+    margin-top: 15px;
+}
+
+/* ===== Botones redondeados ===== */
+.botones-main,
+.entrar,
+.crear-cuenta,
+.mascotas button,
+.adoptar {
+    display: block;
+    margin: 25px auto 10px;
+    width: 150px;
+    height: 50px;
+    border: 2px solid var(--btn-borde);
+    border-radius: 20px;
+    background-color: var(--btn-2);
+    color: inherit;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.botones-main:hover,
+.entrar:hover,
+.crear-cuenta:hover,
+.mascotas button:hover,
+.adoptar:hover {
+    transform: scale(1.2);
+}
+
+.botones-main {
+    margin: 0 auto 10px;
+}
+
+#iniciar {
+    background-color: var(--btn-1);
+}
+
+.adoptar {
+    width: 160px;
+    height: 40px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+/* ===== Cajas / secciones ===== */
+.main,
+.formulario,
+.fotos,
+.datos,
+#grupo-genero,
+#grupo-salud,
+#grupo-personalidad,
+#grupo-apto {
+    border: 3px solid var(--btn-hover);
+    border-radius: 10px;
+    background-color: var(--bg-secciones);
+}
+
+.main {
+    max-width: 500px;
+    margin: 150px auto;
+}
+
+.formulario {
+    max-width: 1000px;
+    margin: 150px auto;
+    padding-left: 20px;
+    text-align: center;
+}
+
+/* ===== Etiquetas (chips) ===== */
+.etiquetas-input,
+.item-input {
+    display: none;
+}
+
+.etiquetas,
+.item {
+    display: inline-block;
+    padding: 8px 16px;
+    margin: 5px;
+    border: 2px solid var(--btn-hover);
+    border-radius: 20px;
+    background-color: var(--bg-secciones);
+    color: var(--texto-patitas);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.etiquetas:hover,
+.etiquetas-input:checked + .etiquetas,
+.etiquetas:has(.etiquetas-input:checked) {
+    background-color: var(--btn-1);
+    color: white;
+}
+
+/* ===== Index ===== */
+.pag-index,
+.pag-iniciar-sesion {
+    text-align: center;
+}
+
+#logo {
+    height: 250px;
+    margin-top: 40px;
+}
+
+.pag-index .main {
+    margin: 60px auto;
+}
+
+.pag-index h1 {
+    font-family: "Jua", sans-serif;
+    color: var(--texto-patitas);
+    font-size: 65px;
+    margin: 5px 0 20px;
+}
+
+.pag-index h4:not(footer h4) {
+    margin: auto 80px 20px;
+}
+
+/* ===== Iniciar sesión ===== */
+.pag-iniciar-sesion input {
+    display: block;
+    width: 150px;
+    height: 25px;
+    margin: 10px auto;
+    border: 2px solid var(--btn-borde);
+    border-radius: 10px;
+    background-color: var(--bg-espacios);
+}
+
+/* ===== Crear cuenta ===== */
+.espacios {
+    width: 300px;
+    height: 25px;
+    margin: 10px auto 10px 20px;
+    border: 2px solid var(--btn-borde);
+    border-radius: 10px;
+    background-color: var(--bg-espacios);
+}
+
+.pag-crear-cuenta small {
+    padding-left: 30px;
+}
+
+.registro {
+    text-align: center;
+}
+.formulario label[for] {
+    display: inline-block;
+    margin-top: 15px;
+}
+
+/* ===== Inicio ===== */
+.titulo {
+    padding-left: 60px;
+}
+
+.banner {
+    display: block;
+    margin: 0 auto;
+}
+
+.botones {
+    display: flex;
+    width: 1000px;
+    margin: 20px auto;
+    border: 2px solid var(--texto-patitas);
+    border-radius: 30px;
+    background-color: var(--btn-3);
+}
+
+.botones:hover {
+    background-color: var(--btn-ini-hover);
+}
+
+#img {
+    width: 250px;
+    height: auto;
+    margin: 0 -40px 0 -70px;
+}
+
+/* ===== Explorar ===== */
+.cuadrilla {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 30px;
+    margin-left: 100px;
+}
+
+.mascotas {
+    border: 6px solid var(--btn-borde);
+    border-radius: 5px;
+}
+
+.mascotas h3 {
+    text-align: center;
+}
+
+.mascotas img {
+    width: 310px;
+    height: 360px;
+}
+
+/* ===== Vista ampliada ===== */
+.pag-vista header {
+    position: relative;
+    height: 300px;
+}
+
+.pag-vista header img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.pag-vista header::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, transparent 50%, var(--bg-principal) 100%);
+}
+
+.info {
+    position: relative;
+    margin-top: -60px;
+    padding: 0 40px;
+}
+
+#datos-mascota,
+#perfil-familia {
+    border: 3px solid var(--btn-borde);
+    border-radius: 10px;
+    padding: 0 10px 0 20px;
+    box-shadow: 0 4px 12px grey;
+}
+
+#datos-mascota {
+    margin-bottom: 40px;
+}
+
+#perfil-familia {
+    background-color: var(--bg-secciones);
+}
+
+/* ===== Adoptar ===== */
+.adopcion {
+    display: block;
+    margin: 0 auto;
+}
+
+.texto {
+    text-align: center;
+}
+
+/* ===== Publicar mascota ===== */
+.fotos {
+    max-width: 1500px;
+    margin: 40px auto;
+    padding: 15px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 15px 20px;
+}
+
+.fotos label {
+    font-weight: bold;
+}
+
+.fotos input[type="file"] {
+    width: 300px;
+    padding: 4px;
+    border: 2px solid var(--btn-borde);
+    border-radius: 20px;
+    background-color: white;
+    color: var(--btn-borde);
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.fotos input[type="file"]::file-selector-button {
+    font-family: inherit;
+    font-weight: bold;
+    background: var(--btn-3);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 6px 14px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.fotos input[type="file"]::file-selector-button:hover {
+    background: var(--btn-hover);
+}
+
+.datos,
+#grupo-genero,
+#grupo-salud,
+#grupo-personalidad,
+#grupo-apto {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 15px 20px;
+    box-sizing: border-box;
+}
+
+.datos-input {
+    width: 300px;
+    padding: 6px 12px;
+    margin: 8px 0;
+    border: 2px solid var(--btn-borde);
+    border-radius: 10px;
+    background-color: var(--bg-espacios);
+    box-sizing: border-box;
+}
+
+form > p {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.descripcion {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 12px 16px;
+    border: 3px solid var(--btn-hover);
+    border-radius: 10px;
+    background-color: var(--bg-secciones);
+    font-size: 15px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+.publicar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 180px;
+    height: 50px;
+    margin: 25px auto 40px;
+    border: 2px solid var(--btn-borde);
+    border-radius: 20px;
+    background-color: var(--btn-2);
+    color: var(--btn-borde);
+    font-weight: bold;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.publicar:hover {
+    transform: scale(1.1);
+}
