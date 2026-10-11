@@ -22,13 +22,17 @@ Plataforma web de adopción de mascotas que conecta familias adoptantes con quie
 
 ### Para adoptar
 
-- **Página 4 (Explorar):** catálogo de mascotas con foto, nombre y un botón "Ver mascota" que lleva a la vista ampliada.
-- **Página 5 (Vista ampliada):** imagen grande, nombre, tags de género, raza y edad, una descripción de la mascota, el perfil del adoptante ideal y un botón para adoptar.
-- **Página 6 (Adoptar):** mensaje de confirmación con el nombre y la foto de la mascota adoptada.
+| Página | Nombre             | Descripción                                                                                                                               |
+| ------ | ------------------ | ----------------------------------------------------------------------------------------------------------------------------------------- |
+| 4      | **Explorar**       | Catálogo de mascotas con foto, nombre y un botón "Ver mascota" que lleva a la vista ampliada.                                             |
+| 5      | **Vista ampliada** | Imagen grande, nombre, tags de género, raza y edad, una descripción de la mascota, el perfil del adoptante ideal y un botón para adoptar. |
+| 6      | **Adoptar**        | Mensaje de confirmación con el nombre y la foto de la mascota adoptada.                                                                   |
 
 ### Para dar en adopción
 
-- **Página 7 (Publicar mascota):** formulario con todos los datos del animal (obligatorios) y un botón "Publicar ahora". Al publicar, vuelve a la página de inicio.
+| Página | Nombre               | Descripción                                                                                                                      |
+| ------ | -------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
+| 7      | **Publicar mascota** | Formulario con todos los datos del animal (obligatorios) y un botón "Publicar ahora". Al publicar, vuelve a la página de inicio. |
 
 ## Tecnologías utilizadas
 
@@ -67,3 +71,6 @@ Plataforma web de adopción de mascotas que conecta familias adoptantes con quie
   - [x] Explorar
   - [x] Vista ampliada
   - [x] Adoptar
+
+  GITHUB PAGES:
+  https://2511953.github.io/Proyecto2026-FontanaJulieta-SollaAgostina/
