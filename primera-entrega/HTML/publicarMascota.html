@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="Julieta Fontana, Agostina Solla" name="author">
-    <meta content="Completá los datos de tu mascota y publicala para encontrarle el hogar y adoptante ideal" name="description">
-    <meta content="patitas, publicar mascota, dar en adopción, datos de la mascota, adopción, perros, gatos, Argentina" name="keywords">
+    <meta content="Completá los datos de tu mascota y publicala para encontrarle el hogar y adoptante ideal"
+        name="description">
+    <meta content="patitas, publicar mascota, dar en adopción, datos de la mascota, adopción, perros, gatos, Argentina"
+        name="keywords">
     <link rel="stylesheet" href="../style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,7 +25,7 @@
 
 </head>
 
-<body onload="iniciar()">
+<body>
 
     <a href="inicio.html" id="boton-volver" title="Volver al inicio" class="volver">Volver</a>
 
@@ -33,7 +35,7 @@
     </header>
 
     <main>
-        <form id="form-publicar" action="#" method="post">
+        <form id="form-publicar" action="#" method="post" onsubmit="publicar(event)">
 
             <fieldset id="grupo-fotos" class="fotos">
                 <legend>Fotos *</legend>
@@ -183,14 +185,14 @@
         </h4>
         <div class="botonesapps-posicion">
             <button class="botonesapps">
-                    <img src="../Imagenes/instagram.png" alt="Logo de instagram" class="img">
-                </button>
-                <button class="botonesapps">
-                    <img src="../Imagenes/facebook.png" alt="Logo de facebook" class="img">
-                </button>
-                <button class="botonesapps">
-                    <img src="../Imagenes/whatsapp.png" alt="Logo de whatsapp" class="img">
-                </button>
+                <img src="../Imagenes/instagram.png" alt="Logo de instagram" class="img">
+            </button>
+            <button class="botonesapps">
+                <img src="../Imagenes/facebook.png" alt="Logo de facebook" class="img">
+            </button>
+            <button class="botonesapps">
+                <img src="../Imagenes/whatsapp.png" alt="Logo de whatsapp" class="img">
+            </button>
         </div>
         <p class="copy">&copy; 2026, Patitas · Hecho con amor desde Argentina </p>
     </footer>
