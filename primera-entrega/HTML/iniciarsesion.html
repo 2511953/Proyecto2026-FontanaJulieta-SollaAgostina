@@ -21,7 +21,7 @@
     <title>Iniciar Sesion</title>
 </head>
 
-<body class="pag-iniciar-sesion" onload="iniciar()">
+<body class="pag-iniciar-sesion">
     <header>
         <a href="../../index.html" id="boton-volver" title="Volver al index" class="volver">Volver</a>
     </header>
@@ -30,7 +30,7 @@
             <h2>¡Bienvenido de vuelta! 🐾</h2>
             <p>Ingresá tus datos para continuar</p>
 
-            <form id="form-login">
+            <form id="form-login" onsubmit="iniciarSesion(event)">
 
                 <p>
                     <label for="email">EMAIL</label>

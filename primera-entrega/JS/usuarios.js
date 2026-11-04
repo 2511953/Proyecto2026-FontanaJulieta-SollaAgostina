@@ -74,3 +74,12 @@ const iniciar = () => {
     if (formRegistro) formRegistro.addEventListener("submit", registrar);
     if (formLogin) formLogin.addEventListener("submit", iniciarSesion);
 };
+
+/**
+ * Cierra la sesión del usuario activo y vuelve al index
+ * @method cerrarSesion()
+ */
+const cerrarSesion = () => {
+    localStorage.removeItem("usuarioActivo");
+    window.location.href = "../index.html";
+};

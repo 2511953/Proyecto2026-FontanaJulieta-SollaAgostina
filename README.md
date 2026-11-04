@@ -1,6 +1,6 @@
 # Patitas 🐾
 
-**Pagna web para adoptar y dar en adopcion mascotas - Fontana Julieta y Solla Agostina**
+**Pagina web para adoptar y dar en adopcion mascotas - Fontana Julieta y Solla Agostina**
 
 Plataforma web de adopción de mascotas que conecta familias adoptantes con quienes dan animales en adopción.
 
@@ -36,16 +36,20 @@ Plataforma web de adopción de mascotas que conecta familias adoptantes con quie
 
 ## Tecnologías utilizadas
 
-| Tecnología                                | Uso                                                  |
-| ----------------------------------------- | ---------------------------------------------------- |
-| HTML5                                     | Estructura de las páginas                            |
-| CSS3                                      | Estilos                                              |
-| JavaScript                                | Lógica de mascotas, usuarios y validación de errores |
-| [Google Fonts](https://fonts.google.com/) | Tipografías (Momo Trust Display y Jua)               |
-| [Coolors](https://coolors.co/)            | Paleta de colores                                    |
-| GitHub                                    | Control de versiones                                 |
-| GitHub Pages                              | Hosting                                              |
-| Figma                                     | Creacion de prototipo                                |
+| Tecnología                                | Uso                                                             |
+| ----------------------------------------- | --------------------------------------------------------------- |
+| HTML5                                     | Estructura de las páginas                                       |
+| CSS3                                      | Estilos                                                         |
+| JavaScript                                | Lógica de mascotas, usuarios y validación de errores            |
+| [Google Fonts](https://fonts.google.com/) | Tipografías (Momo Trust Display y Jua)                          |
+| [Coolors](https://coolors.co/)            | Paleta de colores                                               |
+| GitHub                                    | Control de versiones                                            |
+| GitHub Pages                              | Hosting                                                         |
+| Figma                                     | Creacion de prototipo                                           |
+| React                                     | Usar componentes reutilizables y renderizar datos dinamicamente |
+| SASS                                      | Organizar los estilos                                           |
+| Vite                                      | Levantar el React                                               |
+| Postman                                   | Para levantar la API                                            |
 
 ## Avance del proyecto
 

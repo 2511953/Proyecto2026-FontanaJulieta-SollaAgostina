@@ -67,6 +67,3 @@ const publicar = (evento) => {
     lector.readAsDataURL(archivo);
 };
 
-const iniciar = () => {
-    document.querySelector("#form-publicar").addEventListener("submit", publicar);
-};

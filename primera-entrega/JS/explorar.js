@@ -6,8 +6,6 @@ const mostrarCantidad = () => {
     document.querySelector("#cantidad-mascotas").textContent = mascotas.length;
 };
 
-document.addEventListener("DOMContentLoaded", mostrarCantidad);
-
 /**
  * Arma una tarjeta por cada mascota del array
  * @method mostrarTarjetas()
