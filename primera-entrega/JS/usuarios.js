@@ -67,14 +67,6 @@ const iniciarSesion = (evento) => {
     window.location.href = "inicio.html";
 };
 
-const iniciar = () => {
-    const formRegistro = document.querySelector("#form-registro");
-    const formLogin = document.querySelector("#form-login");
-
-    if (formRegistro) formRegistro.addEventListener("submit", registrar);
-    if (formLogin) formLogin.addEventListener("submit", iniciarSesion);
-};
-
 /**
  * Cierra la sesión del usuario activo y vuelve al index
  * @method cerrarSesion()

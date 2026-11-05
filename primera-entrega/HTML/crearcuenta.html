@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="Julieta Fontana, Agostina Solla" name="author">
-    <meta content="Creá tu cuenta y completá tu perfil para encontrar tu mascota perfecta o tu adoptante ideal" name="description">
+    <meta content="Creá tu cuenta y completá tu perfil para encontrar tu mascota perfecta o tu adoptante ideal"
+        name="description">
     <meta content="patitas, crear cuenta, registro, adopción, mascotas, perfil, match, Argentina" name="keywords">
     <link rel="stylesheet" href="../style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,7 +22,7 @@
     <title>Crear Cuenta</title>
 </head>
 
-<body class="pag-crear-cuenta" onload="iniciar()">
+<body class="pag-crear-cuenta">
     <header>
         <a href="../../index.html" id="boton-volver" title="Volver al index" class="volver">Volver</a>
     </header>
@@ -30,7 +31,7 @@
             <h1>Creá tu cuenta 🐶</h1>
             <p>Completá tu perfil para encontrar el match perfecto</p>
 
-            <form id="form-registro">
+            <form id="form-registro" onsubmit="registrar(event)">
                 <label for="nombre">NOMBRE COMPLETO</label><br>
                 <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" maxlength="50"
                     class="espacios"><br>
@@ -132,14 +133,14 @@
         </h4>
         <div class="botonesapps-posicion">
             <button class="botonesapps">
-                    <img src="../Imagenes/instagram.png" alt="Logo de instagram" class="img">
-                </button>
-                <button class="botonesapps">
-                    <img src="../Imagenes/facebook.png" alt="Logo de facebook" class="img">
-                </button>
-                <button class="botonesapps">
-                    <img src="../Imagenes/whatsapp.png" alt="Logo de whatsapp" class="img">
-                </button>
+                <img src="../Imagenes/instagram.png" alt="Logo de instagram" class="img">
+            </button>
+            <button class="botonesapps">
+                <img src="../Imagenes/facebook.png" alt="Logo de facebook" class="img">
+            </button>
+            <button class="botonesapps">
+                <img src="../Imagenes/whatsapp.png" alt="Logo de whatsapp" class="img">
+            </button>
         </div>
         <p class="copy">&copy; 2026, Patitas · Hecho con amor desde Argentina </p>
     </footer>
