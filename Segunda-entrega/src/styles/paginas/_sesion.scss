@@ -1,0 +1,26 @@
+@use "../mixins" as *;
+
+// ===== Iniciar sesión =====
+.pag-iniciar-sesion input {
+  @include input-base;
+  display: block;
+  width: 150px;
+  height: 25px;
+  margin: 10px auto;
+}
+
+// ===== Crear cuenta =====
+.espacios {
+  @include input-base;
+  width: 300px;
+  height: 25px;
+  margin: 10px auto 10px 20px;
+}
+
+.pag-crear-cuenta small {
+  padding-left: 30px;
+}
+
+.registro {
+  text-align: center;
+}

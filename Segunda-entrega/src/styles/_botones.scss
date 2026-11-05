@@ -1,0 +1,68 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+// ===== Botón volver =====
+.volver {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90px;
+  height: 78px;
+  padding-bottom: 20px;
+  box-sizing: border-box;
+  border: none;
+  background: url("@assets/volver.svg") center / contain no-repeat;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.pag-iniciar-sesion .volver,
+.pag-crear-cuenta .volver,
+.pag-vista .volver {
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  z-index: 1;
+}
+
+.pag-explorar .volver {
+  margin-top: 15px;
+}
+
+// ===== Botones redondeados =====
+.botones-main,
+.entrar,
+.crear-cuenta,
+.mascotas button,
+.adoptar {
+  @include boton-redondeado;
+  margin: 25px auto 10px;
+}
+
+.botones-main {
+  margin: 0 auto 10px;
+}
+
+#iniciar {
+  background-color: $btn-1;
+}
+
+.adoptar {
+  width: 160px;
+  height: 40px;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.publicar {
+  @include boton-redondeado(180px, 50px);
+  @include crecer(1.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 25px auto 40px;
+  color: $btn-borde;
+  font-weight: bold;
+  box-sizing: border-box;
+}

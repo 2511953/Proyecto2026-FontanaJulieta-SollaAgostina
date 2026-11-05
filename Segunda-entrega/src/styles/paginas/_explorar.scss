@@ -1,0 +1,23 @@
+@use "../variables" as *;
+
+.cuadrilla {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 30px;
+  margin-left: 100px;
+}
+
+.mascotas {
+  border: 6px solid $btn-borde;
+  border-radius: 5px;
+
+  h3 {
+    text-align: center;
+  }
+
+  img {
+    width: 310px;
+    height: 360px;
+  }
+}

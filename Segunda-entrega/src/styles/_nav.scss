@@ -1,0 +1,48 @@
+@use "variables" as *;
+
+nav {
+  display: flex;
+  background-color: $bg-nav-footer;
+  border-radius: 10px;
+
+  #logo {
+    width: 200px;
+    height: auto;
+    margin: 0 -40px 0 0;
+  }
+
+  ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    padding-top: 30px;
+  }
+
+  a,
+  .cerrar-sesion {
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    background-color: $bg-nav-footer;
+    color: white;
+    font-size: 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+
+    &:hover {
+      background-color: $btn-hover;
+      transform: scale(1.2);
+    }
+  }
+}
+
+#textologo {
+  font-family: $fuente-titulo;
+  padding-top: 30px;
+  color: $btn-borde;
+}
+
+.pag-explorar nav a {
+  background-color: $btn-1;
+}

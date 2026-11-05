@@ -1,0 +1,78 @@
+@use "../variables" as *;
+@use "../mixins" as *;
+
+.fotos {
+  max-width: 1500px;
+  margin: 40px auto;
+  padding: 15px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 15px 20px;
+
+  label {
+    font-weight: bold;
+  }
+
+  input[type="file"] {
+    width: 300px;
+    padding: 4px;
+    border: 2px solid $btn-borde;
+    border-radius: 20px;
+    background-color: white;
+    color: $btn-borde;
+    font-size: 14px;
+    box-sizing: border-box;
+
+    &::file-selector-button {
+      font-family: inherit;
+      font-weight: bold;
+      background: $btn-3;
+      color: white;
+      border: none;
+      border-radius: 20px;
+      padding: 6px 14px;
+      margin-right: 10px;
+      cursor: pointer;
+
+      &:hover {
+        background: $btn-hover;
+      }
+    }
+  }
+}
+
+.datos,
+#grupo-genero,
+#grupo-salud,
+#grupo-personalidad,
+#grupo-apto {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 15px 20px;
+  box-sizing: border-box;
+}
+
+.datos-input {
+  @include input-base;
+  width: 300px;
+  padding: 6px 12px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+form > p {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.descripcion {
+  @include caja;
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 12px 16px;
+  font-size: 15px;
+  box-sizing: border-box;
+  resize: vertical;
+}

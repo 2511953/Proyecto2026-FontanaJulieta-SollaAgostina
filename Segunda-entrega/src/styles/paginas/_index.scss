@@ -1,0 +1,28 @@
+@use "../variables" as *;
+
+.pag-index,
+.pag-iniciar-sesion {
+  text-align: center;
+}
+
+#logo {
+  height: 250px;
+  margin-top: 40px;
+}
+
+.pag-index {
+  .main {
+    margin: 60px auto;
+  }
+
+  h1 {
+    font-family: $fuente-titulo;
+    color: $texto-patitas;
+    font-size: 65px;
+    margin: 5px 0 20px;
+  }
+
+  h4:not(footer h4) {
+    margin: auto 80px 20px;
+  }
+}

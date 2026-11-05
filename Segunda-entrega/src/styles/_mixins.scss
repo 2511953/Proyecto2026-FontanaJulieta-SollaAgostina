@@ -1,0 +1,37 @@
+@use "variables" as *;
+
+// Agranda el elemento al pasar el mouse
+@mixin crecer($escala: 1.2) {
+  transition: transform 0.2s ease;
+
+  &:hover {
+    transform: scale($escala);
+  }
+}
+
+// Caja con borde rosa fuerte (secciones y formularios)
+@mixin caja {
+  border: 3px solid $btn-hover;
+  border-radius: 10px;
+  background-color: $bg-secciones;
+}
+
+// Input con borde bordó y fondo rosado
+@mixin input-base {
+  border: 2px solid $btn-borde;
+  border-radius: 10px;
+  background-color: $bg-espacios;
+}
+
+// Botón redondeado
+@mixin boton-redondeado($ancho: 150px, $alto: 50px) {
+  display: block;
+  width: $ancho;
+  height: $alto;
+  border: 2px solid $btn-borde;
+  border-radius: 20px;
+  background-color: $btn-2;
+  color: inherit;
+  cursor: pointer;
+  @include crecer;
+}
