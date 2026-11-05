@@ -1,0 +1,69 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+// ===== Cajas / secciones =====
+.main,
+.formulario,
+.fotos,
+.datos,
+#grupo-genero,
+#grupo-salud,
+#grupo-personalidad,
+#grupo-apto {
+  @include caja;
+}
+
+.main {
+  max-width: 500px;
+  margin: 150px auto;
+}
+
+.formulario {
+  max-width: 1000px;
+  margin: 150px auto;
+  padding-left: 20px;
+  text-align: center;
+
+  label[for] {
+    display: inline-block;
+    margin-top: 15px;
+  }
+}
+
+// ===== Etiquetas (chips) =====
+.etiquetas-input,
+.item-input {
+  display: none;
+}
+
+.etiquetas,
+.item {
+  display: inline-block;
+  padding: 8px 16px;
+  margin: 5px;
+  border: 2px solid $btn-hover;
+  border-radius: 20px;
+  background-color: $bg-secciones;
+  color: $texto-patitas;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.etiquetas:hover,
+.etiquetas-input:checked + .etiquetas,
+.etiquetas:has(.etiquetas-input:checked) {
+  background-color: $btn-1;
+  color: white;
+}
+
+// ===== Mensajes de error (validación en tiempo real) =====
+.error {
+  display: block;
+  color: $btn-hover;
+  font-size: 13px;
+  margin-top: 4px;
+}
+
+.input-error {
+  border-color: $btn-hover;
+}

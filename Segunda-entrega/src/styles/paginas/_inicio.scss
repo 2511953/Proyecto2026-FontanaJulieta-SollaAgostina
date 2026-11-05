@@ -1,0 +1,29 @@
+@use "../variables" as *;
+
+.titulo {
+  padding-left: 60px;
+}
+
+.banner {
+  display: block;
+  margin: 0 auto;
+}
+
+.botones {
+  display: flex;
+  width: 1000px;
+  margin: 20px auto;
+  border: 2px solid $texto-patitas;
+  border-radius: 30px;
+  background-color: $btn-3;
+
+  &:hover {
+    background-color: $btn-ini-hover;
+  }
+}
+
+.img-boton {
+  width: 250px;
+  height: auto;
+  margin: 0 -40px 0 -70px;
+}

@@ -1,0 +1,42 @@
+@use "../variables" as *;
+
+.pag-vista header {
+  position: relative;
+  height: 300px;
+
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, transparent 50%, $bg-principal 100%);
+  }
+}
+
+.info {
+  position: relative;
+  margin-top: -60px;
+  padding: 0 40px;
+}
+
+#datos-mascota,
+#perfil-familia {
+  border: 3px solid $btn-borde;
+  border-radius: 10px;
+  padding: 0 10px 0 20px;
+  box-shadow: 0 4px 12px grey;
+}
+
+#datos-mascota {
+  margin-bottom: 40px;
+}
+
+#perfil-familia {
+  background-color: $bg-secciones;
+}
