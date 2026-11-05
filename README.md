@@ -50,6 +50,10 @@ Plataforma web de adopción de mascotas que conecta familias adoptantes con quie
 | SASS                                      | Organizar los estilos                                           |
 | Vite                                      | Levantar el React                                               |
 | Postman                                   | Para levantar la API                                            |
+| Node.js                                   | Instalar dependencias                                           |
+| JSON server                               | Mockup de servicios                                             |
+| EsLint                                    | Analizar errores                                                |
+| React Router DOM                          | Ruteo entre paginas                                             |
 
 ## Avance del proyecto
 
