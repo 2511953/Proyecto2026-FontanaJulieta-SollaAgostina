@@ -11,6 +11,7 @@ Plataforma web de adopción de mascotas que conecta familias adoptantes con quie
   - [Para dar en adopción](#para-dar-en-adopción)
 - [Tecnologías utilizadas](#tecnologías-utilizadas)
 - [Avance del proyecto](#avance-del-proyecto)
+- [Cómo ejecutar el proyecto](#cómo-ejecutar-el-proyecto)
 
 ## Estructura
 
@@ -49,13 +50,15 @@ Plataforma web de adopción de mascotas que conecta familias adoptantes con quie
 | React                                     | Usar componentes reutilizables y renderizar datos dinamicamente |
 | SASS                                      | Organizar los estilos                                           |
 | Vite                                      | Levantar el React                                               |
-| Postman                                   | Para levantar la API                                            |
+| Postman                                   | Probar dependencias de la API                                   |
 | Node.js                                   | Instalar dependencias                                           |
 | JSON server                               | Mockup de servicios                                             |
 | EsLint                                    | Analizar errores                                                |
 | React Router DOM                          | Ruteo entre paginas                                             |
 
 ## Avance del proyecto
+
+### Primera entrega
 
 - [x] Repositorio de GitHub
 - [x] Sketch
@@ -80,5 +83,60 @@ Plataforma web de adopción de mascotas que conecta familias adoptantes con quie
   - [x] Vista ampliada
   - [x] Adoptar
 
-  GITHUB PAGES:
-  https://2511953.github.io/Proyecto2026-FontanaJulieta-SollaAgostina/
+### Segunda entrega
+
+- [x] Proyecto con Vite + React
+- [x] Estructura de carpetas (components, pages, styles, api)
+- [x] Imports con alias
+- [x] Rutas con React Router DOM y Outlet
+- [x] Header con cerrar sesión
+- [x] Mock de servicios (db.json + JSON Server)
+- [x] Estilos en SASS (variables, mixins y anidación)
+- [ ] Páginas
+  - [ ] Index
+  - [ ] Iniciar sesión
+  - [ ] Crear cuenta
+  - [ ] Inicio
+  - [ ] Explorar
+  - [ ] Vista ampliada
+  - [ ] Adoptar
+  - [ ] Publicar mascota
+- [ ] Componentes reutilizables (Card, Footer)
+- [ ] Validaciones en tiempo real
+- [ ] Datos guardados en localStorage
+- [ ] Publicación en GitHub Pages
+
+## Cómo ejecutar el proyecto
+
+### Requisitos
+
+- [Node.js](https://nodejs.org/) 20.19 o superior
+- npm
+
+### Pasos
+
+1. Clonar el repositorio:
+   ```bash
+   git clone https://github.com/2511953/Proyecto2026-FontanaJulieta-SollaAgostina.git
+   ```
+2. Entrar a la carpeta de la segunda entrega:
+   ```bash
+   cd Proyecto2026-FontanaJulieta-SollaAgostina/Segunda-entrega
+   ```
+3. Instalar las dependencias:
+   ```bash
+   npm install
+   ```
+4. Levantar el mock de servicios (en una terminal):
+   ```bash
+   npm run server
+   ```
+   La API queda en `http://localhost:3001/mascotas`
+5. Levantar la página (en otra terminal):
+   ```bash
+   npm run dev
+   ```
+6. Abrir el link que aparece en la terminal.
+
+GITHUB PAGES:
+https://2511953.github.io/Proyecto2026-FontanaJulieta-SollaAgostina/
