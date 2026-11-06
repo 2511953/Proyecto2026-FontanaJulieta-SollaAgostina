@@ -92,19 +92,19 @@ Plataforma web de adopción de mascotas que conecta familias adoptantes con quie
 - [x] Header con cerrar sesión
 - [x] Mock de servicios (db.json + JSON Server)
 - [x] Estilos en SASS (variables, mixins y anidación)
-- [ ] Páginas
-  - [ ] Index
-  - [ ] Iniciar sesión
-  - [ ] Crear cuenta
-  - [ ] Inicio
-  - [ ] Explorar
-  - [ ] Vista ampliada
-  - [ ] Adoptar
-  - [ ] Publicar mascota
-- [ ] Componentes reutilizables (Card, Footer)
-- [ ] Validaciones en tiempo real
-- [ ] Datos guardados en localStorage
-- [ ] Publicación en GitHub Pages
+- [x] Páginas
+  - [x] Index
+  - [x] Iniciar sesión
+  - [x] Crear cuenta
+  - [x] Inicio
+  - [x] Explorar
+  - [x] Vista ampliada
+  - [x] Adoptar
+  - [x] Publicar mascota
+- [x] Componentes reutilizables (Card, Footer)
+- [x] Validaciones en tiempo real
+- [x] Datos guardados en localStorage
+- [x] Publicación en GitHub Pages
 
 ## Cómo ejecutar el proyecto
 
