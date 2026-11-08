@@ -1,5 +1,5 @@
 import { Routes, Route } from 'react-router-dom'
-import Layout from '@components/Layout'
+import Layout from '@layout/Layout'
 import Index from '@pages/Index'
 import IniciarSesion from '@pages/IniciarSesion'
 import CrearCuenta from '@pages/CrearCuenta'
