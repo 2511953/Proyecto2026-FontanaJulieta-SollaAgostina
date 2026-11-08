@@ -86,7 +86,7 @@ Plataforma web de adopción de mascotas que conecta familias adoptantes con quie
 ### Segunda entrega
 
 - [x] Proyecto con Vite + React
-- [x] Estructura de carpetas (components, pages, styles, api)
+- [x] Estructura de carpetas (api, components, data, layout, pages, styles, utils)
 - [x] Imports con alias
 - [x] Rutas con React Router DOM y Outlet
 - [x] Header con cerrar sesión
