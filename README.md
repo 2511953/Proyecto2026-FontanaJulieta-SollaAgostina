@@ -110,7 +110,7 @@ Plataforma web de adopción de mascotas que conecta familias adoptantes con quie
 
 ### Requisitos
 
-- [Node.js](https://nodejs.org/) 20.19 o superior
+- [Node.js](https://nodejs.org/) 24 o superior
 - npm
 
 ### Pasos
