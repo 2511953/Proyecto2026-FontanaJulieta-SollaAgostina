@@ -1,6 +1,15 @@
+.mensaje-adopcion {
+  padding: 0 24px;
+}
+
 .adopcion {
   display: block;
+  width: 100%;
+  max-width: 400px;
+  height: 400px;
   margin: 0 auto;
+  border-radius: 20px;
+  object-fit: cover;
 }
 
 .texto {

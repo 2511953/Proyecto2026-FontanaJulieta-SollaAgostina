@@ -1,4 +1,5 @@
 @use "variables" as *;
+@use "mixins" as *;
 
 body {
   background-color: $bg-principal;
@@ -17,6 +18,10 @@ a {
   text-decoration: none;
 }
 
+img {
+  max-width: 100%;
+}
+
 input::placeholder {
   text-align: center;
 }
@@ -28,4 +33,16 @@ legend {
 
 small {
   padding-left: 20px;
+}
+
+// Separación de los costados para el contenido de las páginas internas
+.inicio,
+.explorar,
+.publicar-mascota,
+.vista-ampliada {
+  padding: 0 24px;
+
+  @include celular {
+    padding: 0 12px;
+  }
 }

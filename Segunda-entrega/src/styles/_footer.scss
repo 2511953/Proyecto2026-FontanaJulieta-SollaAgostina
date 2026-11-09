@@ -2,13 +2,15 @@
 @use "mixins" as *;
 
 footer {
+  margin-top: 40px;
+  padding: 20px;
   background-color: $bg-nav-footer;
   border-radius: 10px;
 
   h4 {
+    max-width: 700px;
+    margin: 0;
     text-align: justify;
-    margin: 40px 500px 0 10px;
-    padding: 20px 0 0 20px;
   }
 }
 
@@ -16,7 +18,11 @@ footer {
   display: flex;
   justify-content: flex-end;
   gap: 15px;
-  padding-right: 55px;
+
+  @include celular {
+    justify-content: center;
+    margin-top: 15px;
+  }
 }
 
 .botonesapps {
@@ -37,7 +43,6 @@ footer {
 }
 
 .copy {
-  display: block;
   text-align: center;
-  padding-bottom: 10px;
+  margin-bottom: 0;
 }

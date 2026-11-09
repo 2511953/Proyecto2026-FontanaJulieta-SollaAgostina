@@ -1,7 +1,9 @@
 @use "variables" as *;
+@use "mixins" as *;
 
 nav {
   display: flex;
+  align-items: center;
   background-color: $bg-nav-footer;
   border-radius: 10px;
 
@@ -15,7 +17,6 @@ nav {
     list-style: none;
     display: flex;
     gap: 15px;
-    padding-top: 30px;
   }
 
   a,
@@ -35,14 +36,26 @@ nav {
       transform: scale(1.2);
     }
   }
+
+  @include celular {
+    flex-wrap: wrap;
+    justify-content: center;
+
+    #logo {
+      width: 90px;
+      margin: 0;
+    }
+
+    ul {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 5px;
+      padding: 0;
+    }
+  }
 }
 
 #textologo {
   font-family: $fuente-titulo;
-  padding-top: 30px;
   color: $btn-borde;
-}
-
-.pag-explorar nav a {
-  background-color: $btn-1;
 }
