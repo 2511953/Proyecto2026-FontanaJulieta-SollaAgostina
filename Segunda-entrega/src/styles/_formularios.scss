@@ -1,16 +1,13 @@
 @use "variables" as *;
 @use "mixins" as *;
 
-// ===== Cajas / secciones =====
+// ===== Cajas =====
 .main,
-.formulario,
-.fotos,
-.datos,
-#grupo-genero,
-#grupo-salud,
-#grupo-personalidad,
-#grupo-apto {
+.formulario {
   @include caja;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
 }
 
 .main {
@@ -19,44 +16,119 @@
 }
 
 .formulario {
-  max-width: 1000px;
+  max-width: 700px;
   margin: 150px auto;
-  padding-left: 20px;
-  text-align: center;
+}
 
-  label[for] {
-    display: inline-block;
-    margin-top: 15px;
+@include celular {
+  .main,
+  .formulario {
+    margin: 100px 12px 40px;
   }
 }
 
-// ===== Etiquetas (chips) =====
-.etiquetas-input,
-.item-input {
-  display: none;
+// ===== Campos (componente Campo) =====
+.campo {
+  margin: 15px 0;
+
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+
+  input,
+  select {
+    @include input-base;
+    width: 300px;
+    max-width: 100%;
+    padding: 6px 12px;
+    box-sizing: border-box;
+  }
+
+  textarea {
+    @include caja;
+    display: block;
+    width: 100%;
+    padding: 12px 16px;
+    font-size: 15px;
+    box-sizing: border-box;
+    resize: vertical;
+  }
+
+  input[type="file"] {
+    padding: 4px;
+    border-radius: 20px;
+    background-color: white;
+    color: $btn-borde;
+    font-size: 14px;
+
+    &::file-selector-button {
+      font-family: inherit;
+      font-weight: bold;
+      background: $btn-3;
+      color: white;
+      border: none;
+      border-radius: 20px;
+      padding: 6px 14px;
+      margin-right: 10px;
+      cursor: pointer;
+
+      &:hover {
+        background: $btn-hover;
+      }
+    }
+  }
+
+  [aria-invalid="true"] {
+    border-color: $btn-hover;
+  }
 }
 
-.etiquetas,
-.item {
+// ===== Grupos de opciones (componente GrupoOpciones) =====
+fieldset {
+  @include caja;
+  margin: 20px 0;
+  padding: 15px 20px;
+}
+
+.opcion {
   display: inline-block;
-  padding: 8px 16px;
-  margin: 5px;
-  border: 2px solid $btn-hover;
-  border-radius: 20px;
-  background-color: $bg-secciones;
-  color: $texto-patitas;
-  cursor: pointer;
-  transition: all 0.2s ease;
+
+  // El input queda oculto a la vista pero sigue siendo accesible con teclado y lector de pantalla
+  input {
+    position: absolute;
+    opacity: 0;
+  }
+
+  label {
+    display: inline-block;
+    padding: 8px 16px;
+    margin: 5px;
+    border: 2px solid $btn-hover;
+    border-radius: 20px;
+    background-color: $bg-secciones;
+    color: $texto-patitas;
+    cursor: pointer;
+    transition: all 0.2s ease;
+
+    &:hover {
+      background-color: $btn-1;
+      color: white;
+    }
+  }
+
+  input:checked + label {
+    background-color: $btn-1;
+    color: white;
+  }
+
+  input:focus-visible + label {
+    outline: 3px solid $btn-borde;
+  }
 }
 
-.etiquetas:hover,
-.etiquetas-input:checked + .etiquetas,
-.etiquetas:has(.etiquetas-input:checked) {
-  background-color: $btn-1;
-  color: white;
-}
-
-// ===== Mensajes de error (validación en tiempo real) =====
+// ===== Mensajes de error =====
 .error {
   display: block;
   color: $btn-hover;
@@ -64,6 +136,11 @@
   margin-top: 4px;
 }
 
-.input-error {
-  border-color: $btn-hover;
+.registro {
+  margin-top: 15px;
+
+  a {
+    font-weight: bold;
+    text-decoration: underline;
+  }
 }

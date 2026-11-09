@@ -1,18 +1,13 @@
 @use "../variables" as *;
 
-.pag-index,
-.pag-iniciar-sesion {
-  text-align: center;
-}
-
-#logo {
-  height: 250px;
-  margin-top: 40px;
-}
-
-.pag-index {
+.index {
   .main {
     margin: 60px auto;
+  }
+
+  .logo {
+    height: 250px;
+    margin-top: 20px;
   }
 
   h1 {
@@ -22,7 +17,7 @@
     margin: 5px 0 20px;
   }
 
-  h4:not(footer h4) {
-    margin: auto 80px 20px;
+  h4 {
+    margin: 0 40px 20px;
   }
 }

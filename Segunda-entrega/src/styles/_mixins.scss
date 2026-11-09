@@ -23,15 +23,25 @@
   background-color: $bg-espacios;
 }
 
-// Botón redondeado
+// Botón redondeado (sirve para button y para links)
 @mixin boton-redondeado($ancho: 150px, $alto: 50px) {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: $ancho;
   height: $alto;
+  box-sizing: border-box;
   border: 2px solid $btn-borde;
   border-radius: 20px;
   background-color: $btn-2;
   color: inherit;
   cursor: pointer;
   @include crecer;
+}
+
+// Estilos que se aplican solo en pantallas chicas
+@mixin celular {
+  @media (max-width: $celular) {
+    @content;
+  }
 }

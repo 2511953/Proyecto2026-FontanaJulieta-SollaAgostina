@@ -1,26 +1,14 @@
 @use "../mixins" as *;
 
-// ===== Iniciar sesión =====
-.pag-iniciar-sesion input {
-  @include input-base;
-  display: block;
-  width: 150px;
-  height: 25px;
-  margin: 10px auto;
-}
+// Botón volver de iniciar sesión y crear cuenta (arriba a la izquierda)
+#root > header .volver {
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  z-index: 1;
 
-// ===== Crear cuenta =====
-.espacios {
-  @include input-base;
-  width: 300px;
-  height: 25px;
-  margin: 10px auto 10px 20px;
-}
-
-.pag-crear-cuenta small {
-  padding-left: 30px;
-}
-
-.registro {
-  text-align: center;
+  @include celular {
+    top: 8px;
+    left: 8px;
+  }
 }

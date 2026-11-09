@@ -25,7 +25,9 @@ const DATOS_INICIALES = { nombre: '', email: '', password: '', confirmacion: '' 
 const validarCampo = (nombre, valor, password) => {
   if (nombre === 'email') return validarObligatorio(valor) || validarEmail(valor)
   if (nombre === 'password') return validarMinimo(valor, 8)
-  if (nombre === 'confirmacion') return validarPasswordsIguales(password, valor)
+  if (nombre === 'confirmacion') {
+    return validarObligatorio(valor) || validarPasswordsIguales(password, valor)
+  }
   return validarObligatorio(valor)
 }
 
